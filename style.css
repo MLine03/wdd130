@@ -14,7 +14,11 @@ body {
     text-align: center;
   }
   
-  /* Navigation links */
+  /* Navigation styles */
+  nav {
+    margin: 0 auto;
+  }
+  
   nav a {
     color: white;
     text-decoration: none;
@@ -25,29 +29,41 @@ body {
     text-decoration: underline;
   }
   
-  /* Main content styling */
-  main {
-    width: 80%;
-    margin: 0 auto;
+  /* Heading styling */
+  h1 {
+    font-size: 2rem;
+    text-align: center;
   }
   
-  /* Profile image in main */
+  /* General img styling */
+  img {
+    display: block;
+    max-width: 100%;
+  }
+  
+  /* Profile image inside main */
   main img {
     width: 150px;
     height: auto;
   }
   
+  /* Main content styling */
+  main {
+    max-width: 800px;
+    margin: 0 auto;
+  }
+  
   /* Aside styling */
   aside {
     width: 300px;
-    margin: 20px;
+    margin: 20px auto;
     padding: 15px;
     border: 2px solid #ccc;
     background-color: #f4f4f4;
     color: #333;
   }
   
-  /* Aside image styling */
+  /* Aside image */
   aside img {
     width: 200px;
     height: auto;
@@ -66,7 +82,7 @@ body {
     padding: 10px 0;
   }
   
-  /* General link styling */
+  /* Link styling */
   a {
     color: #333;
     text-decoration: none;
