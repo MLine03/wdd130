@@ -4,69 +4,75 @@ body {
     line-height: 1.6;
     margin: 0;
     padding: 0;
-}
-
-/* Header styling */
-header {
+  }
+  
+  /* Header styling */
+  header {
     background: #333;
     color: white;
     padding: 20px 0;
     text-align: center;
-}
-
-/* Navigation links */
-nav a {
+  }
+  
+  /* Navigation links */
+  nav a {
     color: white;
     text-decoration: none;
     margin: 0 15px;
-}
-
-nav a:hover {
+  }
+  
+  nav a:hover {
     text-decoration: underline;
-}
-
-/* Main content styling */
-main {
-    width: 80%; /* Limit the width of the main content */
+  }
+  
+  /* Main content styling */
+  main {
+    width: 80%;
     margin: 0 auto;
-}
-
-/* Styling for the aside element */
-aside {
-    width: 300px; /* Set the width for the aside */
+  }
+  
+  /* Profile image in main */
+  main img {
+    width: 150px;
+    height: auto;
+  }
+  
+  /* Aside styling */
+  aside {
+    width: 300px;
     margin: 20px;
     padding: 15px;
     border: 2px solid #ccc;
     background-color: #f4f4f4;
     color: #333;
-    float: right;
-}
-
-/* Styling for the image inside the aside */
-aside img {
+  }
+  
+  /* Aside image styling */
+  aside img {
     width: 200px;
-    height: auto; /* Maintains the aspect ratio of the image */
-}
-
-/* Paragraph styling */
-p {
-    padding: 0; /* Set padding to 0 for paragraphs */
-}
-
-/* Footer styling */
-footer {
+    height: auto;
+  }
+  
+  /* Paragraph styling */
+  p {
+    padding: 0;
+  }
+  
+  /* Footer styling */
+  footer {
     margin-top: 30px;
     border-top: 2px solid #ccc;
     text-align: center;
     padding: 10px 0;
-}
-
-/* Optional styling for links (if any) */
-a {
+  }
+  
+  /* General link styling */
+  a {
     color: #333;
     text-decoration: none;
-}
-
-a:hover {
+  }
+  
+  a:hover {
     text-decoration: underline;
-}
+  }
+  
