@@ -108,3 +108,22 @@
     margin: 0;
   }
   
+  /* Specific Styles for Main Image */
+  main img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+  }
+  
+  /* Paragraph Styles */
+  p {
+    padding: 0;
+  }
+  
+  /* Footer Layout */
+  footer {
+    margin-top: 15px;
+    border-top: 1px solid #000;
+    text-align: center;
+  }
+  
