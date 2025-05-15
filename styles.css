@@ -1,4 +1,4 @@
-/* General Styles */
+/* General Reset */
 * {
     margin: 0;
     padding: 0;
@@ -12,30 +12,31 @@
     color: #333;
   }
   
-  /* Header Styles */
+  /* Header */
   header {
     background-color: #333;
     color: white;
     padding: 10px 0;
   }
   
-  header nav {
+  nav {
     display: flex;
     justify-content: center;
     gap: 20px;
   }
   
-  header a {
+  nav a {
     color: white;
     text-decoration: none;
     font-size: 18px;
+    margin: 0 10px;
   }
   
-  header a:hover {
+  nav a:hover {
     text-decoration: underline;
   }
   
-  /* Main Content Styles */
+  /* Main Content */
   main {
     text-align: center;
     padding: 20px;
@@ -57,14 +58,20 @@
     margin-bottom: 20px;
   }
   
-  main p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    margin-top: 20px;
-    color: #555;
+  /* Ensure only main img is affected */
+  main img {
+    width: 150px;
+    height: auto;
   }
   
-  /* Aside Styles */
+  p {
+    font-size: 1.1em;
+    line-height: 1.8;
+    color: #555;
+    padding: 0;
+  }
+  
+  /* Aside */
   aside {
     text-align: center;
     background-color: #fff;
@@ -73,12 +80,7 @@
     width: 80%;
     max-width: 800px;
     border: 1px solid #ddd;
-  }
-  
-  aside h2 {
-    font-size: 1.8em;
     color: #333;
-    margin-bottom: 10px;
   }
   
   aside img {
@@ -87,13 +89,7 @@
     margin-bottom: 20px;
   }
   
-  aside p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #555;
-  }
-  
-  /* Footer Styles */
+  /* Footer */
   footer {
     text-align: center;
     background-color: #333;
@@ -101,29 +97,5 @@
     padding: 10px;
     margin-top: 30px;
     border-top: 1px solid #fff;
-  }
-  
-  footer p {
-    font-size: 1em;
-    margin: 0;
-  }
-  
-  /* Specific Styles for Main Image */
-  main img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-  }
-  
-  /* Paragraph Styles */
-  p {
-    padding: 0;
-  }
-  
-  /* Footer Layout */
-  footer {
-    margin-top: 15px;
-    border-top: 1px solid #000;
-    text-align: center;
   }
   
