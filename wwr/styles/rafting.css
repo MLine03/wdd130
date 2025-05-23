@@ -26,6 +26,14 @@
     margin: 0 auto;
   }
   
+  /* Header/Footer Background */
+  header, footer {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 1rem;
+  }
+  
+  /* Typography */
   h1, h2 {
     font-family: var(--heading-font);
     color: var(--primary-color);
@@ -79,5 +87,35 @@
     margin-left: 10px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
+  /* Adventure Section Images */
+  section img {
+    width: 150px;
+    margin: 8px;
+    border-radius: 6px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+  }
+  
+  /* Responsive Enhancements */
+  @media (max-width: 840px) {
+    header, main, footer {
+      width: 100%;
+      padding: 0 16px;
+    }
+  
+    .hero article {
+      width: auto;
+      left: 0;
+      right: 0;
+      margin: 0 16px;
+    }
+  
+    section img {
+      width: 100%;
+      max-width: 300px;
+      display: block;
+      margin: 8px auto;
+    }
   }
   
