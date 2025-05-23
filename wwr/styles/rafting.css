@@ -1,0 +1,83 @@
+/* CSS Variables */
+:root {
+    --primary-color: #07beb8;
+    --secondary-color: #3dccc7;
+    --accent1-color: #68d8d6;
+    --accent2-color: #9ceaef;
+    --heading-font: 'Poppins', sans-serif;
+    --body-font: 'Roboto', sans-serif;
+  }
+  
+  /* Reset */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global Styles */
+  body {
+    font-family: var(--body-font);
+    color: var(--accent1-color);
+  }
+  
+  header, main, footer {
+    width: 840px;
+    margin: 0 auto;
+  }
+  
+  h1, h2 {
+    font-family: var(--heading-font);
+    color: var(--primary-color);
+  }
+  
+  nav, p, section, article {
+    margin: 16px;
+    padding: 8px;
+  }
+  
+  /* Social Media Links */
+  .socialmedia a {
+    text-decoration: none;
+  }
+  
+  /* Hero Section Styling */
+  .hero {
+    position: relative;
+  }
+  
+  .hero img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  
+  .hero h1 {
+    position: absolute;
+    top: 20px;
+    width: 100%;
+    padding: 16px;
+    text-align: center;
+    opacity: 0.7;
+    background-color: var(--accent1-color);
+    color: #fff;
+  }
+  
+  .hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    padding: 16px;
+    width: 300px;
+  }
+  
+  .hero article img {
+    float: right;
+    width: 125px;
+    margin-left: 10px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  }
+  
