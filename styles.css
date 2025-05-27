@@ -1,101 +1,77 @@
-/* General Reset */
+/* CSS Variables */
+:root {
+  --primary-color: #07beb8;
+  --secondary-color: #3dccc7;
+  --accent1-color: #68d8d6;
+  --accent2-color: #9ceaef;
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Reset and Base Styles */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  body {
-    font-family: Arial, sans-serif;
-    line-height: 1.6;
-    background-color: #f4f4f4;
-    color: #333;
-  }
-  
-  /* Header */
-  header {
-    background-color: #333;
-    color: white;
-    padding: 10px 0;
-  }
-  
-  nav {
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  nav a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    margin: 0 10px;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Main Content */
-  main {
-    text-align: center;
-    padding: 20px;
-    background-color: white;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-  }
-  
-  main h1 {
-    font-size: 2em;
-    margin-bottom: 20px;
-  }
-  
-  main img {
-    width: 150px;
-    height: auto;
-    border-radius: 50%;
-    margin-bottom: 20px;
-  }
-  
-  /* Ensure only main img is affected */
-  main img {
-    width: 150px;
-    height: auto;
-  }
-  
-  p {
-    font-size: 1.1em;
-    line-height: 1.8;
-    color: #555;
-    padding: 0;
-  }
-  
-  /* Aside */
-  aside {
-    text-align: center;
-    background-color: #fff;
-    padding: 20px;
-    margin: 20px auto;
-    width: 80%;
-    max-width: 800px;
-    border: 1px solid #ddd;
-    color: #333;
-  }
-  
-  aside img {
-    width: 200px;
-    height: auto;
-    margin-bottom: 20px;
-  }
-  
-  /* Footer */
-  footer {
-    text-align: center;
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    margin-top: 30px;
-    border-top: 1px solid #fff;
-  }
-  
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--body-font);
+  color: #333;
+  background-color: #f9f9f9;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 16px;
+}
+
+header, footer {
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+  margin: 1rem 0;
+}
+
+ul.box, aside.box {
+  background-color: var(--accent2-color);
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 8px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  margin-top: 1rem;
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+footer {
+  margin-top: 2rem;
+}
