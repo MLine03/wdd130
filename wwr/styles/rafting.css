@@ -1,121 +1,205 @@
 /* CSS Variables */
 :root {
-    --primary-color: #07beb8;
-    --secondary-color: #3dccc7;
-    --accent1-color: #68d8d6;
-    --accent2-color: #9ceaef;
-    --heading-font: 'Poppins', sans-serif;
-    --body-font: 'Roboto', sans-serif;
-  }
-  
-  /* Reset */
-  * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-  
-  /* Global Styles */
-  body {
-    font-family: var(--body-font);
-    color: var(--accent1-color);
-  }
-  
+  --primary-color: #07beb8;
+  --secondary-color: #3dccc7;
+  --accent1-color: #68d8d6;
+  --accent2-color: #9ceaef;
+  --heading-font: 'Poppins', sans-serif;
+  --body-font: 'Roboto', sans-serif;
+}
+
+/* Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Global Styles */
+body {
+  font-family: var(--body-font);
+  color: #333;
+  background-color: #fff;
+}
+
+header, main, footer {
+  width: 840px;
+  margin: 0 auto;
+}
+
+h1, h2 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+nav, p, section, article {
+  margin: 16px;
+  padding: 8px;
+}
+
+/* Header Styles with Grid and Flex Nav */
+header {
+  display: grid;
+  grid-template-columns: auto 1fr auto;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+}
+
+header img {
+  height: 80px;
+}
+
+header h1 {
+  margin-left: 1rem;
+}
+
+nav ul {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Hero Section Styling */
+.hero {
+  position: relative;
+}
+
+.hero img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.hero h1 {
+  position: absolute;
+  top: 20px;
+  width: 100%;
+  padding: 16px;
+  text-align: center;
+  opacity: 0.7;
+  background-color: var(--accent1-color);
+  color: #fff;
+}
+
+.hero article {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  padding: 16px;
+  width: 300px;
+}
+
+.hero article img {
+  float: right;
+  width: 125px;
+  margin-left: 10px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+/* History Section */
+.history-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+}
+
+.history-content img {
+  width: 100%;
+  border-radius: 8px;
+}
+
+/* Adventures Section */
+.adventure-gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  justify-content: space-between;
+}
+
+.adventure-gallery figure {
+  flex: 1 1 calc(20% - 1rem);
+  text-align: center;
+}
+
+.adventure-gallery img {
+  width: 100%;
+  height: auto;
+  border-radius: 6px;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+}
+
+.adventure-gallery figcaption {
+  margin-top: 0.5rem;
+  font-size: 0.9rem;
+}
+
+/* Footer */
+footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 1rem;
+}
+
+footer .social a img {
+  height: 30px;
+  margin-left: 1rem;
+}
+
+.socialmedia a {
+  text-decoration: none;
+}
+
+/* Responsive Enhancements */
+@media (max-width: 840px) {
   header, main, footer {
-    width: 840px;
-    margin: 0 auto;
-  }
-  
-  /* Header/Footer Background */
-  header, footer {
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 1rem;
-  }
-  
-  /* Typography */
-  h1, h2 {
-    font-family: var(--heading-font);
-    color: var(--primary-color);
-  }
-  
-  nav, p, section, article {
-    margin: 16px;
-    padding: 8px;
-  }
-  
-  /* Social Media Links */
-  .socialmedia a {
-    text-decoration: none;
-  }
-  
-  /* Hero Section Styling */
-  .hero {
-    position: relative;
-  }
-  
-  .hero img {
-    display: block;
     width: 100%;
-    height: auto;
+    padding: 0 16px;
   }
-  
-  .hero h1 {
-    position: absolute;
-    top: 20px;
-    width: 100%;
-    padding: 16px;
-    text-align: center;
-    opacity: 0.7;
-    background-color: var(--accent1-color);
-    color: #fff;
-  }
-  
+
   .hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 20px;
-    background-color: rgba(0, 0, 0, 0.5);
-    color: #fff;
-    padding: 16px;
-    width: 300px;
+    width: auto;
+    left: 0;
+    right: 0;
+    margin: 0 16px;
   }
-  
-  .hero article img {
-    float: right;
-    width: 125px;
-    margin-left: 10px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.3);
-  }
-  
-  /* Adventure Section Images */
+
   section img {
-    width: 150px;
-    margin: 8px;
-    border-radius: 6px;
-    box-shadow: 0 2px 8px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 300px;
+    display: block;
+    margin: 8px auto;
   }
-  
-  /* Responsive Enhancements */
-  @media (max-width: 840px) {
-    header, main, footer {
-      width: 100%;
-      padding: 0 16px;
-    }
-  
-    .hero article {
-      width: auto;
-      left: 0;
-      right: 0;
-      margin: 0 16px;
-    }
-  
-    section img {
-      width: 100%;
-      max-width: 300px;
-      display: block;
-      margin: 8px auto;
-    }
+
+  .adventure-gallery {
+    flex-direction: column;
+    align-items: center;
   }
-  
+
+  .adventure-gallery figure {
+    flex: none;
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .history-content {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+}
