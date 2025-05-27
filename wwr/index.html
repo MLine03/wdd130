@@ -1,45 +1,57 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <meta name="author" content="Meline Levao">
+  <meta name="description" content="Meline Levao's WDD 130 homepage.">
   <title>Meline Levao | WDD 130</title>
-  <meta name="description" content="Meline Levao's WDD 130 homepage featuring personal info and a link to her white water rafting website project." />
-  <meta name="author" content="Meline Levao" />
-
-  <!-- Google Fonts Preconnect for performance -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-
-  <!-- Google Fonts: Poppins and Roboto -->
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet" />
-
-  <!-- Main CSS -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
 </head>
 <body>
+
   <header>
-    <h1>Meline Levao</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="wwr/index.html">Rafting Website</a> <!-- ✅ Fixed path -->
+      <a href="index.html">Home</a>
+      <a href="about.html">About Me</a>
+      <a href="contact.html">Contact</a>
+      <a href="wwr/index.html">Rafting Site</a>
+      <a href="https://www.byui.edu">BYU-Idaho</a>
+      <a href="https://www.churchofjesuschrist.org">Church Website</a>
     </nav>
   </header>
 
   <main>
     <h1>Welcome to My WDD 130 Page</h1>
-    <img src="images/profile.jpg" alt="Photo of Meline Levao" width="200" />
-    <p>Hello! My name is Meline Levao and I am from South Jordan, Utah. I'm a student in the WDD 130 course learning HTML, CSS, and building my own web projects including a white water rafting website!</p>
+    <p>Hi! I'm Meline Levao, and this is my homepage for the WDD 130 course at BYU-Idaho.</p>
+
+    <ul class="box">
+      <li>I love learning new things.</li>
+      <li>Web development is exciting!</li>
+      <li>Looking forward to this semester.</li>
+    </ul>
+
+    <div class="grid">
+      <section>
+        <h2>South Jordan, Utah</h2>
+        <p>This is where I'm from! A beautiful place with friendly people.</p>
+      </section>
+      <section>
+        <img src="images/south-jordan.jpg" alt="View of South Jordan, Utah">
+      </section>
+    </div>
   </main>
 
-  <aside>
-    <h2>South Jordan, Utah</h2>
-    <img src="images/south-jordan.jpg" alt="View of South Jordan, Utah" width="300" />
-    <p>South Jordan is located in the Salt Lake Valley and is known for its scenic views, outdoor activities, and strong community spirit.</p>
+  <aside class="box">
+    <h2>Fun Facts About Me</h2>
+    <p>I enjoy rafting, hiking, and learning web design.</p>
+    <img src="images/profile.jpg" alt="Meline Levao photo" width="200">
   </aside>
 
   <footer>
-    <p>&copy; 2025 🌟 Meline Levao 🌟 South Jordan, Utah</p>
+    <p>&copy; 2025 Meline Levao | WDD 130 | All rights reserved.</p>
   </footer>
+
 </body>
 </html>
