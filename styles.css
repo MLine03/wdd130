@@ -84,11 +84,6 @@ aside.box {
   border-radius: 8px;
 }
 
-/* Position rule removed to pass validator */
-aside.box {
-  /* no position property to avoid violation */
-}
-
 /* Images */
 img {
   max-width: 100%;
