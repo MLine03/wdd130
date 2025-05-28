@@ -84,7 +84,7 @@ ul.box, aside.box {
 }
 
 aside.box {
-  position: static; /* ✅ Fixed: "relative" removed to meet project requirements */
+  position: static; /* ✅ Required for compliance */
 }
 
 /* Images */
