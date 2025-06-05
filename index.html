@@ -2,54 +2,78 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to Meline Levao's official WDD 130 homepage, showcasing web development projects and course assignments.">
-  <meta name="author" content="Meline Levao">
-  <title>Meline Levao | WDD 130</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
+  <title>Contact Us | Whitewater Rafting Adventures</title>
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
+  <meta name="author" content="Whitewater Rafting Adventures Team">
+
+  <!-- Link to local CSS -->
+  <link rel="stylesheet" href="../styles/rafting.css">
 </head>
 <body>
   <header>
-    <h1>Welcome to My WDD 130 Page</h1>
+    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo">
+    <h1>Contact Us</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">W1</a>
-      <a href="#">W2</a>
-      <a href="#">W3</a>
-      <a href="#">W4</a>
-      <a href="#">W5</a>
-      <a href="#">W6</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <div class="grid">
-      <section>
-        <h2>South Jordan, Utah</h2>
-        <p>I am currently living in South Jordan, a city in the Salt Lake Valley...</p>
-        <p>I enjoy the peaceful surroundings and the beautiful mountains...</p>
-      </section>
-      <img src="images/profile.jpg" alt="Meline Levao profile picture">
-    </div>
+    <section class="contact-info">
+      <address>
+        123 River Road<br>
+        Adventure Town, ST 45678<br>
+        Phone: (555) 123-4567<br>
+        Email: info@whitewaterrafting.com
+      </address>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
 
-    <ul class="box">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
+    <section class="employees profiles">
+      <!-- Example employee profile -->
+      <figure>
+        <img src="images/employee1.jpg" alt="Employee Name">
+        <figcaption>Jane Doe - Guide</figcaption>
+      </figure>
+      <!-- Add more profiles -->
+    </section>
 
-    <aside class="box">
-      <h3>Fun Fact</h3>
-      <p>I love hiking and spending time in nature!</p>
-      <img src="images/nature.jpg" alt="Beautiful nature scene">
-    </aside>
+    <section class="contact-form">
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Preferred Contact Method:</label>
+        <label><input type="radio" id="contact-phone" name="contact-method" value="phone" required> Phone</label>
+        <label><input type="radio" id="contact-email" name="contact-method" value="email"> Email</label>
+        <label><input type="radio" id="contact-mail" name="contact-method" value="mail"> Mail</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea>
+
+        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Meline Levao | WDD 130 | All rights reserved</p>
+    <p>© Whitewater Rafting Adventures | All rights reserved</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
   </footer>
 </body>
 </html>

@@ -1,49 +1,79 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Welcome to Meline Levao's official WDD 130 homepage, showcasing web development projects and course assignments.">
-  <meta name="author" content="Meline Levao">
-  <title>Meline Levao | WDD 130</title>
-  <link rel="stylesheet" href="styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto&display=swap" rel="stylesheet">
+  <title>Contact Us | Whitewater Rafting Adventures</title>
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
+  <meta name="author" content="Whitewater Rafting Adventures Team">
+
+  <!-- Link to local CSS -->
+  <link rel="stylesheet" href="../styles/rafting.css">
 </head>
 <body>
   <header>
+    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo">
+    <h1>Contact Us</h1>
     <nav>
-      <a href="#">Home</a>
-      <a href="#">About Me</a>
-      <a href="#">Assignments</a>
-      <a href="#">Projects</a>
-      <a href="#">Contact</a>
-      <a href="#">W03 Page</a>
-      <a href="#">W04 Page</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="tours.html">Tours</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <h1>Welcome to My WDD 130 Page</h1>
-    <h2>South Jordan, Utah</h2>
+    <section class="contact-info">
+      <address>
+        123 River Road<br>
+        Adventure Town, ST 45678<br>
+        Phone: (555) 123-4567<br>
+        Email: info@whitewaterrafting.com
+      </address>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=..." allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
+    </section>
 
-    <ul class="box">
-      <li>HTML</li>
-      <li>CSS</li>
-      <li>JavaScript</li>
-    </ul>
+    <section class="employees profiles">
+      <!-- Example employee profile -->
+      <figure>
+        <img src="images/employee1.jpg" alt="Employee Name">
+        <figcaption>Jane Doe - Guide</figcaption>
+      </figure>
+      <!-- Add more profiles -->
+    </section>
 
-    <div class="grid">
-      <img src="images/photo1.jpg" alt="A sample project image">
-      <img src="images/photo2.jpg" alt="Another sample project image">
-    </div>
+    <section class="contact-form">
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
 
-    <aside class="box">
-      <p>This is a helpful aside element that provides additional context about Meline Levao’s projects and progress in the WDD 130 course.</p>
-    </aside>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Preferred Contact Method:</label>
+        <label><input type="radio" id="contact-phone" name="contact-method" value="phone" required> Phone</label>
+        <label><input type="radio" id="contact-email" name="contact-method" value="email"> Email</label>
+        <label><input type="radio" id="contact-mail" name="contact-method" value="mail"> Mail</label>
+
+        <label for="comments">Comments:</label>
+        <textarea id="comments" name="comments" required></textarea>
+
+        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
   </main>
 
   <footer>
-    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+    <p>© Whitewater Rafting Adventures | All rights reserved</p>
+    <nav>
+      <a href="privacy.html">Privacy Policy</a>
+      <a href="terms.html">Terms of Service</a>
+    </nav>
   </footer>
 </body>
 </html>
