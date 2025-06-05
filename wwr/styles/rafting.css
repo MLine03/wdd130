@@ -2,7 +2,7 @@
   font-family: 'Poppins';
   src: url('../fonts/Poppins-Regular.woff2') format('woff2'),
        url('../fonts/Poppins-Regular.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;  /* use numeric value */
   font-style: normal;
 }
 
@@ -18,7 +18,7 @@
   font-family: 'Roboto';
   src: url('../fonts/Roboto-Regular.woff2') format('woff2'),
        url('../fonts/Roboto-Regular.woff') format('woff');
-  font-weight: normal;
+  font-weight: 400;
   font-style: normal;
 }
 
@@ -66,7 +66,7 @@ nav ul {
 nav ul li a {
   color: white;
   text-decoration: none;
-  font-weight: bold;
+  font-weight: 600; /* semi-bold */
 }
 
 /* Header with Grid and Flex Nav */
@@ -128,7 +128,7 @@ header h1 {
 
 .profiles figcaption {
   margin-top: 0.5rem;
-  font-weight: bold;
+  font-weight: 600;
   color: var(--primary-color);
 }
 
@@ -142,7 +142,7 @@ header h1 {
 }
 
 .contact-form label {
-  font-weight: bold;
+  font-weight: 600;
 }
 
 .contact-form input[type="text"],
