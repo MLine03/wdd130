@@ -1,0 +1,100 @@
+<<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form." />
+  <title>Contact Us | Whitewater Rafting Adventures</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+</head>
+<body>
+  <header>
+    <img src="images/logo.png" alt="Whitewater Rafting Logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Contact Us</h1>
+
+    <section class="contact-info">
+      <h2>Get in Touch</h2>
+      <address>
+        <p>Whitewater Rafting Adventures</p>
+        <p>123 Rapids Lane<br>River Town, CO 80432</p>
+        <p>Phone: (800) 555-RAFT (7238)</p>
+        <p>Email: <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a></p>
+      </address>
+
+      <div class="map">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=YOUR_MAP_EMBED_LINK_HERE"
+          loading="lazy"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
+    </section>
+
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="profiles">
+        <figure>
+          <img src="images/employee1.jpg" alt="Smiling river guide John" width="200">
+          <figcaption>John - Lead Guide</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee2.jpg" alt="Friendly booking agent Sarah" width="200">
+          <figcaption>Sarah - Booking Specialist</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee3.jpg" alt="Support staff Mark" width="200">
+          <figcaption>Mark - Customer Support</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="submit-form.html" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="6" required></textarea>
+
+        <label>
+          <input type="checkbox" name="subscribe" /> Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Whitewater Rafting Adventures</p>
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About Us</a> |
+      <a href="trips.html">Trips</a> |
+      <a href="contact.html">Contact Us</a>
+    </nav>
+    <p><a href="images/contact-wireframe.png" target="_blank">View Contact Page Wireframe</a></p>
+  </footer>
+</body>
+</html>
