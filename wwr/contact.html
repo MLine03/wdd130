@@ -1,76 +1,64 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form." />
-  <meta name="author" content="Whitewater Rafting Adventures Team" />
-  <title>Contact Us | Whitewater Rafting Adventures</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="../styles/rafting.css" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
+  <meta name="author" content="Whitewater Rafting Adventures Team">
+  <title>Contact Whitewater Rafting Adventures | Questions & Reservations</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+
+  <!-- Main CSS -->
+  <link rel="stylesheet" href="../styles/rafting.css">
 </head>
 <body>
   <header>
+    <img src="../images/logo.png" alt="Whitewater Rafting Logo">
     <nav>
-      <!-- Navigation links here -->
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
     </nav>
-    <h1>Contact Us</h1>
   </header>
 
   <main>
-    <section class="contact-info">
-      <h2>Whitewater Rafting Adventures</h2>
-      <address>
-        123 Rapids Lane<br />
-        River Town, CO 80432<br />
-        Phone: <a href="tel:+18005557238">(800) 555-RAFT (7238)</a>
-      </address>
-    </section>
+    <h1>Contact Us</h1>
 
-    <section class="map">
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d24247.314414371584!2d-111.91033494999999!3d40.56556969999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x875285898dabc993%3A0xf566008fdec9b355!2sSouth%20Jordan%2C%20UT!5e0!3m2!1sen!2sus!4v1749097757653!5m2!1sen!2sus"
-        width="600"
-        height="450"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade"
-        title="Whitewater Rafting Adventures Location"
-      ></iframe>
+    <section class="contact-info">
+      <h2>Our Information</h2>
+      <p><strong>Address:</strong> 123 Rapids Rd, River City, ST 12345</p>
+      <p><strong>Phone:</strong> (123) 456-7890</p>
+      <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+
+      <div class="map-container">
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.02083505679!2d-122.4194152846812!3d37.774929279759996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cdddddddf%3A0x5e554fd6b9bb28f!2sWhitewater%20Rafting!5e0!3m2!1sen!2sus!4v1622212345678!5m2!1sen!2sus" 
+          width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
+      </div>
     </section>
 
     <section class="employees">
       <h2>Meet Our Team</h2>
-      <div class="profiles">
+      <div class="employee-gallery">
         <figure>
-          <img src="../images/employee1.jpg" alt="Smiling river guide John" width="200" id="emp1" />
-          <figcaption>John - Lead Guide</figcaption>
+          <img src="../images/employee1.jpg" alt="Jane Doe - Lead Guide">
+          <figcaption>Jane Doe – Lead Guide</figcaption>
         </figure>
         <figure>
-          <img src="../images/employee2.jpg" alt="Friendly booking agent Sarah" width="200" id="emp2" />
-          <figcaption>Sarah - Booking Specialist</figcaption>
+          <img src="../images/employee2.jpg" alt="John Smith - Reservation Specialist">
+          <figcaption>John Smith – Reservation Specialist</figcaption>
         </figure>
         <figure>
-          <img src="../images/employee3.jpg" alt="Support staff Mark" width="200" id="emp3" />
-          <figcaption>Mark - Customer Support</figcaption>
-        </figure>
-        <figure>
-          <img src="../images/employee4.jpg" alt="River Safety Expert Emma" width="200" id="emp4" />
-          <figcaption>Emma - Safety Expert</figcaption>
-        </figure>
-        <figure>
-          <img src="../images/employee5.jpg" alt="Tour Coordinator Jake" width="200" id="emp5" />
-          <figcaption>Jake - Tour Coordinator</figcaption>
-        </figure>
-        <figure>
-          <img src="../images/employee6.jpg" alt="Raft technician Lily" width="200" id="emp6" />
-          <figcaption>Lily - Raft Technician</figcaption>
-        </figure>
-        <figure>
-          <img src="../images/employee7.jpg" alt="River guide Alex smiling with helmet" width="200" id="emp7" />
-          <figcaption>Alex - River Guide</figcaption>
+          <img src="../images/employee3.jpg" alt="Lisa Ray - Customer Service">
+          <figcaption>Lisa Ray – Customer Service</figcaption>
         </figure>
       </div>
     </section>
@@ -78,29 +66,23 @@
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <label for="name">Full Name:</label>
+        <input type="text" id="name" name="name" required>
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required>
 
         <fieldset>
-          <legend>Preferred Contact Method:</legend>
-          <input type="radio" id="contact-phone" name="contact-method" value="phone" />
-          <label for="contact-phone">Phone</label>
-
-          <input type="radio" id="contact-email" name="contact-method" value="email" checked />
-          <label for="contact-email">Email</label>
-
-          <input type="radio" id="contact-none" name="contact-method" value="none" />
-          <label for="contact-none">No Contact Needed</label>
+          <legend>Purpose of your message:</legend>
+          <label><input type="radio" id="inquiry" name="purpose" value="inquiry" required> General Inquiry</label><br>
+          <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label><br>
+          <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
         </fieldset>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <input type="checkbox" id="subscribe" name="subscribe" />
-        <label for="subscribe">Subscribe to our newsletter</label>
+        <label><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter</label>
 
         <button type="submit">Send Message</button>
       </form>
@@ -108,7 +90,8 @@
   </main>
 
   <footer>
-    <p>Copyright © Brigham Young University-Idaho | All rights reserved</p>
+    <p>&copy; 2025 Whitewater Rafting Adventures | All rights reserved</p>
+    <p><a href="../images/contact-wireframe.png" target="_blank">View Contact Us Page Wireframe</a></p>
   </footer>
 </body>
 </html>
