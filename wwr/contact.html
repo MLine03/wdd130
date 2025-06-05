@@ -1,29 +1,30 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
-  <meta name="author" content="Whitewater Rafting Adventures Team">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
   <title>Contact Whitewater Rafting Adventures | Questions & Reservations</title>
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form." />
+  <meta name="author" content="Whitewater Rafting Adventures Team" />
 
   <!-- Google Fonts -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
 
   <!-- Main CSS -->
-  <link rel="stylesheet" href="../styles/rafting.css">
+  <link rel="stylesheet" href="../styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="../images/logo.png" alt="Whitewater Rafting Logo">
+    <img src="../images/logo.png" alt="Whitewater Rafting Logo" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
+        <li><a href="contact.html" class="active">Contact Us</a></li>
       </ul>
     </nav>
   </header>
@@ -31,58 +32,87 @@
   <main>
     <h1>Contact Us</h1>
 
-    <section class="contact-info">
-      <h2>Our Information</h2>
-      <p><strong>Address:</strong> 123 Rapids Rd, River City, ST 12345</p>
-      <p><strong>Phone:</strong> (123) 456-7890</p>
-      <p><strong>Email:</strong> contact@whitewaterrafting.com</p>
+    <!-- Company Info -->
+    <section class="company-info">
+      <h2>Our Contact Information</h2>
+      <address>
+        <p><strong>Address:</strong> 123 River Road, Adventure City, CO 80000</p>
+        <p><strong>Phone:</strong> <a href="tel:+1234567890">(123) 456-7890</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@whitewaterrrafting.com">info@whitewaterrrafting.com</a></p>
+      </address>
 
+      <!-- Embedded Google Map (no inline styles) -->
       <div class="map-container">
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.02083505679!2d-122.4194152846812!3d37.774929279759996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808cdddddddf%3A0x5e554fd6b9bb28f!2sWhitewater%20Rafting!5e0!3m2!1sen!2sus!4v1622212345678!5m2!1sen!2sus" 
-          width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019379727922!2d-122.41941508468105!3d37.774929779759754!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809cbae1e633%3A0xb31b67d6ec623fa9!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1597657538367!5m2!1sen!2sus"
+          width="600"
+          height="450"
+          loading="lazy"
+          title="Google Map of Whitewater Rafting Adventures Location"
+          allowfullscreen
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
       </div>
     </section>
 
+    <!-- Employees -->
     <section class="employees">
       <h2>Meet Our Team</h2>
-      <div class="employee-gallery">
+      <div class="employee-profiles">
         <figure>
-          <img src="../images/employee1.jpg" alt="Jane Doe - Lead Guide">
-          <figcaption>Jane Doe – Lead Guide</figcaption>
+          <img src="../images/employee1.jpg" alt="Emily, Senior Rafting Guide" />
+          <figcaption>Emily - Senior Rafting Guide</figcaption>
         </figure>
         <figure>
-          <img src="../images/employee2.jpg" alt="John Smith - Reservation Specialist">
-          <figcaption>John Smith – Reservation Specialist</figcaption>
+          <img src="../images/employee2.jpg" alt="Mark, Customer Service Specialist" />
+          <figcaption>Mark - Customer Service Specialist</figcaption>
         </figure>
         <figure>
-          <img src="../images/employee3.jpg" alt="Lisa Ray - Customer Service">
-          <figcaption>Lisa Ray – Customer Service</figcaption>
+          <img src="../images/employee3.jpg" alt="Lina, Safety Officer" />
+          <figcaption>Lina - Safety Officer</figcaption>
         </figure>
       </div>
     </section>
 
+    <!-- Contact Form -->
     <section class="contact-form">
       <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+      <form action="submit_form.php" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+        <div class="form-group">
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
 
         <fieldset>
-          <legend>Purpose of your message:</legend>
-          <label><input type="radio" id="inquiry" name="purpose" value="inquiry" required> General Inquiry</label><br>
-          <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label><br>
-          <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label>
+          <legend>Purpose of Message:</legend>
+          <div>
+            <input type="radio" id="general" name="purpose" value="general" required />
+            <label for="general">General Inquiry</label>
+          </div>
+          <div>
+            <input type="radio" id="reservation" name="purpose" value="reservation" />
+            <label for="reservation">Reservation Question</label>
+          </div>
+          <div>
+            <input type="radio" id="suggestion" name="purpose" value="suggestion" />
+            <label for="suggestion">Website Suggestion</label>
+          </div>
         </fieldset>
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+        <div class="form-group">
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
 
-        <label><input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+        <div class="form-group checkbox-group">
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          <label for="subscribe">Please subscribe me to the monthly newsletter</label>
+        </div>
 
         <button type="submit">Send Message</button>
       </form>
@@ -90,8 +120,8 @@
   </main>
 
   <footer>
+    <p>Contact page wireframe: <a href="../images/contact-wireframe.png" target="_blank" rel="noopener">View Wireframe</a></p>
     <p>&copy; 2025 Whitewater Rafting Adventures | All rights reserved</p>
-    <p><a href="../images/contact-wireframe.png" target="_blank">View Contact Us Page Wireframe</a></p>
   </footer>
 </body>
 </html>
