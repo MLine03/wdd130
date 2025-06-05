@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+x<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
@@ -68,15 +68,23 @@
 
         <fieldset>
           <legend>Purpose of Message:</legend>
-          <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-          <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-          <label><input type="radio" name="purpose" value="website"> Website Suggestion</label>
+          <label for="general">
+            <input type="radio" id="general" name="purpose" value="general" required> General Inquiry
+          </label>
+          <label for="reservation">
+            <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+          </label>
+          <label for="website">
+            <input type="radio" id="website" name="purpose" value="website"> Website Suggestion
+          </label>
         </fieldset>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+        <label for="subscribe">
+          <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+        </label>
 
         <button type="submit">Send Message</button>
       </form>
