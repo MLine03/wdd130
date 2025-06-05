@@ -1,94 +1,81 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
-  <meta name="author" content="Whitewater Rafting Adventures Team">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Contact | Whitewater Rafting Adventures</title>
-
-  <!-- Google Fonts and Styles -->
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-  <link href="styles/rafting.css" rel="stylesheet">
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form." />
+  <meta name="author" content="Whitewater Rafting Adventures Team" />
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
-
   <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Logo">
     <nav>
-      <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
-        <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html" class="active">Contact</a></li>
-      </ul>
+      <!-- Navigation items here -->
     </nav>
+    <h1>Contact Whitewater Rafting Adventures</h1>
   </header>
 
   <main>
-    <h1>Contact Us</h1>
-
     <section class="contact-info">
-      <h2>Reach Out to Us</h2>
-      <p>📍 123 River Run Road, Rapidsville, CO 80123</p>
-      <p>📞 (123) 456-7890</p>
-      <p>📧 info@whitewaterraftingco.com</p>
-      <iframe
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019829962117!2d-122.42184428468163!3d37.77492927975895!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c91c6b1c9%3A0xfbb134fca450ff52!2s123%20River%20Run%20Road%2C%20Rapidsville%2C%20CO%2080123!5e0!3m2!1sen!2sus!4v1590000000000!5m2!1sen!2sus"
-        width="600" height="450" loading="lazy" referrerpolicy="no-referrer-when-downgrade" allowfullscreen>
-      </iframe>
+      <h2>Contact Information</h2>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@whitewaterrrafting.com</p>
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019813184217!2d-122.4194154846814!3d37.77492977975939!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c6a6e6a93%3A0xa754cdd5f3757ee!2sSan+Francisco%2C+CA!5e0!3m2!1sen!2sus!4v1616161616161" 
+        allowfullscreen 
+        loading="lazy"
+        title="Whitewater Rafting Adventures Location"
+      ></iframe>
     </section>
 
     <section class="employee-profiles">
       <h2>Meet Our Team</h2>
       <figure>
-        <img src="images/employee1.jpg" alt="Sarah the River Guide">
-        <figcaption>River Guide - Sarah</figcaption>
+        <img src="images/employee1.jpg" alt="Jane Doe - Guide" />
+        <figcaption>Jane Doe - Senior Guide</figcaption>
       </figure>
       <figure>
-        <img src="images/employee2.jpg" alt="Jake in Customer Support">
-        <figcaption>Customer Support - Jake</figcaption>
+        <img src="images/employee2.jpg" alt="John Smith - Guide" />
+        <figcaption>John Smith - Guide</figcaption>
       </figure>
-      <figure>
-        <img src="images/employee3.jpg" alt="Linda the Safety Coordinator">
-        <figcaption>Safety Coordinator - Linda</figcaption>
-      </figure>
-      <!-- Additional images to meet validation requirements -->
-      <img src="images/river1.jpg" alt="Rafting Adventure">
-      <img src="images/river2.jpg" alt="Happy Guests">
-      <img src="images/rafting-team.jpg" alt="Our Rafting Team">
-      <img src="images/equipment.jpg" alt="Rafting Gear">
+      <!-- Add more profiles as needed -->
     </section>
 
     <section class="contact-form">
       <h2>Send Us a Message</h2>
-      <form>
+      <form action="#" method="post" novalidate>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
         <fieldset>
-          <legend>Purpose of Message:</legend>
-          <label for="general">
-            <input type="radio" id="general" name="purpose" value="general" required> General Inquiry
+          <legend>Preferred Contact Method:</legend>
+          <label for="contact-phone">
+            <input type="radio" id="contact-phone" name="contact-method" value="phone" required />
+            Phone
           </label>
-          <label for="reservation">
-            <input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question
+          <label for="contact-email">
+            <input type="radio" id="contact-email" name="contact-method" value="email" />
+            Email
           </label>
-          <label for="website">
-            <input type="radio" id="website" name="purpose" value="website"> Website Suggestion
+          <label for="contact-none">
+            <input type="radio" id="contact-none" name="contact-method" value="none" />
+            No preference
           </label>
         </fieldset>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label for="subscribe">
-          <input type="checkbox" id="subscribe" name="subscribe"> Please subscribe me to the monthly newsletter
+        <label>
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          Subscribe to our newsletter
         </label>
 
         <button type="submit">Send Message</button>
@@ -97,9 +84,7 @@
   </main>
 
   <footer>
-    <p>&copy; 2025 Whitewater Rafting Adventures</p>
-    <p><a href="images/contact-wireframe.png" target="_blank" rel="noopener noreferrer">View Contact Page Wireframe</a></p>
+    <p>© Whitewater Rafting Adventures | All rights reserved</p>
   </footer>
-
 </body>
 </html>
