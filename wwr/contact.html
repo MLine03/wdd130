@@ -1,23 +1,23 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Added viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>Contact Us | Whitewater Rafting Adventures</title>
-  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
-  <meta name="author" content="Whitewater Rafting Adventures Team">
-
-  <!-- Link to local CSS -->
-  <link rel="stylesheet" href="../styles/rafting.css">
+  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form." />
+  <meta name="author" content="Whitewater Rafting Adventures Team" />
+  <!-- Correct CSS path -->
+  <link rel="stylesheet" href="../styles/rafting.css" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" width="200" height="60"> <!-- Added width and height -->
+    <!-- Correct image path and explicit width/height -->
+    <img src="../images/logo.png" alt="Whitewater Rafting Adventures Logo" width="200" height="80" />
     <h1>Contact Us</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="tours.html">Tours</a></li>
+        <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -26,26 +26,26 @@
   <main>
     <section class="contact-info">
       <address>
-        123 River Road<br>
-        Adventure Town, ST 45678<br>
-        Phone: (555) 123-4567<br>
-        Email: info@whitewaterrafting.com
+        123 River Road<br />
+        Adventure Town, ST 45678<br />
+        Phone: (555) 123-4567<br />
+        Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
       </address>
       <div class="map">
+        <!-- Add explicit width and height and title -->
         <iframe 
           src="https://www.google.com/maps/embed?pb=..." 
-          title="Location map of Whitewater Rafting Adventures"  <!-- Added title -->
           width="600" height="450" style="border:0;" 
-          allowfullscreen="" loading="lazy" 
-          referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
+          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+          title="Whitewater Rafting Adventures Location"
+        ></iframe>
       </div>
     </section>
 
     <section class="employees profiles">
-      <!-- Example employee profile -->
       <figure>
-        <img src="images/employee1.jpg" alt="Jane Doe, Whitewater Rafting Guide" width="300" height="200"> <!-- Added width, height, improved alt -->
+        <!-- Fix path and add dimensions -->
+        <img src="../images/employee1.jpg" alt="Jane Doe, Guide" width="150" height="150" />
         <figcaption>Jane Doe - Guide</figcaption>
       </figure>
       <!-- Add more profiles as needed -->
@@ -54,20 +54,22 @@
     <section class="contact-form">
       <form action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required>
+        <input type="text" id="name" name="name" required />
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required>
+        <input type="email" id="email" name="email" required />
 
-        <label>Preferred Contact Method:</label>
-        <label><input type="radio" id="contact-phone" name="contact-method" value="phone" required> Phone</label>
-        <label><input type="radio" id="contact-email" name="contact-method" value="email"> Email</label>
-        <label><input type="radio" id="contact-mail" name="contact-method" value="mail"> Mail</label>
+        <fieldset>
+          <legend>Preferred Contact Method:</legend>
+          <label><input type="radio" id="contact-phone" name="contact-method" value="phone" required /> Phone</label>
+          <label><input type="radio" id="contact-email" name="contact-method" value="email" /> Email</label>
+          <label><input type="radio" id="contact-mail" name="contact-method" value="mail" /> Mail</label>
+        </fieldset>
 
         <label for="comments">Comments:</label>
         <textarea id="comments" name="comments" required></textarea>
 
-        <label><input type="checkbox" id="subscribe" name="subscribe"> Subscribe to newsletter</label>
+        <label><input type="checkbox" id="subscribe" name="subscribe" /> Subscribe to newsletter</label>
 
         <button type="submit">Send Message</button>
       </form>
