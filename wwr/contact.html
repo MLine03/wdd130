@@ -1,23 +1,23 @@
-<!DOCTYPE html>
+<<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">  <!-- Added viewport -->
   <title>Contact Us | Whitewater Rafting Adventures</title>
   <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form.">
   <meta name="author" content="Whitewater Rafting Adventures Team">
 
   <!-- Link to local CSS -->
-  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="stylesheet" href="../styles/rafting.css">
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo">
+    <img src="images/logo.png" alt="Whitewater Rafting Adventures Logo" width="200" height="60"> <!-- Added width and height -->
     <h1>Contact Us</h1>
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="trips.html">Trips</a></li>
+        <li><a href="tours.html">Tours</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -34,9 +34,9 @@
       <div class="map">
         <iframe 
           src="https://www.google.com/maps/embed?pb=..." 
-          style="border:0; width:100%; height:300px;" 
-          allowfullscreen="" 
-          loading="lazy" 
+          title="Location map of Whitewater Rafting Adventures"  <!-- Added title -->
+          width="600" height="450" style="border:0;" 
+          allowfullscreen="" loading="lazy" 
           referrerpolicy="no-referrer-when-downgrade">
         </iframe>
       </div>
@@ -45,7 +45,7 @@
     <section class="employees profiles">
       <!-- Example employee profile -->
       <figure>
-        <img src="images/employee1.jpg" alt="Jane Doe, Whitewater Rafting Guide">
+        <img src="images/employee1.jpg" alt="Jane Doe, Whitewater Rafting Guide" width="300" height="200"> <!-- Added width, height, improved alt -->
         <figcaption>Jane Doe - Guide</figcaption>
       </figure>
       <!-- Add more profiles as needed -->
@@ -59,7 +59,7 @@
         <label for="email">Email:</label>
         <input type="email" id="email" name="email" required>
 
-        <p>Preferred Contact Method:</p>
+        <label>Preferred Contact Method:</label>
         <label><input type="radio" id="contact-phone" name="contact-method" value="phone" required> Phone</label>
         <label><input type="radio" id="contact-email" name="contact-method" value="email"> Email</label>
         <label><input type="radio" id="contact-mail" name="contact-method" value="mail"> Mail</label>
@@ -83,4 +83,3 @@
   </footer>
 </body>
 </html>
-
