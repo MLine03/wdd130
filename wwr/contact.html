@@ -1,75 +1,123 @@
 <!DOCTYPE html>
-<html lang="en-US">
+<html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Contact Us | Whitewater Rafting Adventures</title>
-  <meta name="description" content="Contact Whitewater Rafting Adventures for questions, reservations, or suggestions. Reach us via phone, email, or the contact form." />
-  <meta name="author" content="Whitewater Rafting Adventures Team" />
-  <!-- Correct CSS path -->
-  <link rel="stylesheet" href="../styles/rafting.css" />
+  <title>Contact Us - Whitewater Rafting Adventures</title>
+  
+  <meta name="description" content="Contact Whitewater Rafting Adventures for bookings, questions, or more info about our thrilling rafting tours." />
+  
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
+  
+  <link rel="stylesheet" href="styles/rafting.css" />
 </head>
 <body>
+
   <header>
-    <!-- Correct image path and explicit width/height -->
-    <img src="../images/logo.png" alt="Whitewater Rafting Adventures Logo" width="200" height="80" />
-    <h1>Contact Us</h1>
+    <img src="images/logo.png" alt="Whitewater Rafting Logo" width="150" height="50" />
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="contact-info">
+    <!-- Contact Information and Map -->
+    <section class="contact-info" aria-label="Contact Information and Location">
+      <h2>Contact Information</h2>
       <address>
-        123 River Road<br />
-        Adventure Town, ST 45678<br />
-        Phone: (555) 123-4567<br />
-        Email: <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a>
+        <p><strong>Address:</strong> 123 River Rd, Adventure City, USA</p>
+        <p><strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
       </address>
-      <div class="map">
-        <!-- Add explicit width and height and title -->
-        <iframe 
-          src="https://www.google.com/maps/embed?pb=..." 
-          width="600" height="450" style="border:0;" 
-          allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-          title="Whitewater Rafting Adventures Location"
-        ></iframe>
-      </div>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019214511973!2d-122.41941558468277!3d37.77492927975964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f74159a1b%3A0x9d7066bc8a6c8ab2!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1689200000000!5m2!1sen!2sus"
+        title="Company Location Map"
+        width="100%"
+        height="400"
+        style="border:0;"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-hidden="false"
+        tabindex="0">
+      </iframe>
     </section>
 
-    <section class="employees profiles">
+    <!-- Employee Profiles -->
+    <section class="employee-profiles" aria-label="Our Rafting Guides">
+      <h2>Meet Our Guides</h2>
       <figure>
-        <!-- Fix path and add dimensions -->
-        <img src="../images/employee1.jpg" alt="Jane Doe, Guide" width="150" height="150" />
-        <figcaption>Jane Doe - Guide</figcaption>
+        <img src="images/employee1.jpg" alt="John Doe, Lead Rafting Guide" width="180" height="180" />
+        <figcaption>John Doe - Lead Guide</figcaption>
       </figure>
-      <!-- Add more profiles as needed -->
+      <figure>
+        <img src="images/employee2.jpg" alt="Jane Smith, Safety Specialist" width="180" height="180" />
+        <figcaption>Jane Smith - Safety Specialist</figcaption>
+      </figure>
     </section>
 
-    <section class="contact-form">
-      <form action="#" method="post">
+    <!-- Contact Form -->
+    <section class="contact-form" aria-label="Contact Form">
+      <h2>Get In Touch</h2>
+      <form action="#" method="POST" novalidate>
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name" required />
+        <input
+          type="text"
+          id="name"
+          name="name"
+          required
+          placeholder="Your full name"
+          aria-required="true"
+          aria-describedby="nameHelp"
+        />
+        <small id="nameHelp" class="sr-only">Please enter your full name.</small>
 
         <label for="email">Email:</label>
-        <input type="email" id="email" name="email" required />
+        <input
+          type="email"
+          id="email"
+          name="email"
+          required
+          placeholder="you@example.com"
+          aria-required="true"
+          aria-describedby="emailHelp"
+        />
+        <small id="emailHelp" class="sr-only">Please enter a valid email address.</small>
+
+        <label for="message">Message:</label>
+        <textarea
+          id="message"
+          name="message"
+          rows="5"
+          required
+          placeholder="Write your message here"
+          aria-required="true"
+          aria-describedby="messageHelp"
+        ></textarea>
+        <small id="messageHelp" class="sr-only">Enter your message to us.</small>
 
         <fieldset>
-          <legend>Preferred Contact Method:</legend>
-          <label><input type="radio" id="contact-phone" name="contact-method" value="phone" required /> Phone</label>
-          <label><input type="radio" id="contact-email" name="contact-method" value="email" /> Email</label>
-          <label><input type="radio" id="contact-mail" name="contact-method" value="mail" /> Mail</label>
+          <legend>How did you hear about us?</legend>
+          <label><input type="radio" name="source" value="friend" required /> Friend</label>
+          <label><input type="radio" name="source" value="web" /> Website</label>
+          <label><input type="radio" name="source" value="ad" /> Advertisement</label>
+          <label><input type="radio" name="source" value="other" /> Other</label>
         </fieldset>
 
-        <label for="comments">Comments:</label>
-        <textarea id="comments" name="comments" required></textarea>
-
-        <label><input type="checkbox" id="subscribe" name="subscribe" /> Subscribe to newsletter</label>
+        <fieldset>
+          <legend>Subscribe to newsletter</legend>
+          <label><input type="checkbox" name="subscribe" /> Yes, sign me up!</label>
+        </fieldset>
 
         <button type="submit">Send Message</button>
       </form>
@@ -77,11 +125,8 @@
   </main>
 
   <footer>
-    <p>© Whitewater Rafting Adventures | All rights reserved</p>
-    <nav>
-      <a href="privacy.html">Privacy Policy</a>
-      <a href="terms.html">Terms of Service</a>
-    </nav>
+    <p>&copy; 2025 Whitewater Rafting Company</p>
   </footer>
+
 </body>
 </html>
