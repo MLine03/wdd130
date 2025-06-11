@@ -1,63 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Whitewater Rafting Adventures</title>
-  
-  <!-- ✅ SEO -->
-  <meta name="description" content="Experience thrilling whitewater rafting tours with our expert guides. Book your next adventure today!" />
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contact Us - Whitewater Rafting Adventures</title>
+  <meta name="description" content="Contact Whitewater Rafting Adventures for bookings, questions, or more info about our thrilling rafting tours.">
+  <meta name="author" content="meline">
 
-  <!-- ✅ Favicon -->
-  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
 
-  <!-- ✅ Google Fonts Preconnect -->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
 
-  <!-- ✅ CSS -->
-  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
 
   <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Logo" width="150" height="50" />
+    <img src="images/logo.png" alt="Whitewater Rafting Logo" width="150" height="50">
     <nav>
       <ul>
-        <li><a href="index.html" class="active">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About Us</a></li>
         <li><a href="trips.html">Trips</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" class="active" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h1>Welcome to Our Adventure Tours</h1>
-      <p>Explore the best rafting experiences with us.</p>
-      <img src="images/employee1.jpg" alt="John Doe, Rafting Guide" width="150" height="150" />
+    <h1>Contact Whitewater Rafting Adventures</h1>
+
+    <!-- Contact Info and Map -->
+    <section class="contact-info" aria-label="Contact Information and Location">
+      <h2>Contact Information</h2>
+      <address>
+        <p><strong>Address:</strong> 123 River Rd, Adventure City, USA</p>
+        <p><strong>Phone:</strong> <a href="tel:+15551234567">(555) 123-4567</a></p>
+        <p><strong>Email:</strong> <a href="mailto:info@whitewaterrafting.com">info@whitewaterrafting.com</a></p>
+      </address>
+
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019214511973!2d-122.41941558468277!3d37.77492927975964!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808f74159a1b%3A0x9d7066bc8a6c8ab2!2sSan%20Francisco%20City%20Hall!5e0!3m2!1sen!2sus!4v1689200000000!5m2!1sen!2sus"
+        title="Company Location Map"
+        width="100%"
+        height="400"
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+        aria-hidden="false"
+        tabindex="0">
+      </iframe>
     </section>
 
-    <section>
-      <h2>Find Us Here</h2>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=..."
-        title="Company Location Map"
-        width="600"
-        height="450"
-        style="border:0;"
-        allowfullscreen=""
-        loading="lazy"
-        referrerpolicy="no-referrer-when-downgrade">
-      </iframe>
+    <!-- Employee Profiles -->
+    <section class="employee-profiles" aria-label="Our Rafting Guides">
+      <h2>Meet Our Guides</h2>
+      <figure>
+        <img src="images/employee1.jpg" alt="John Doe, Lead Rafting Guide" width="180" height="180">
+        <figcaption>John Doe – Lead Guide</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee2.jpg" alt="Jane Smith, Safety Specialist" width="180" height="180">
+        <figcaption>Jane Smith – Safety Specialist</figcaption>
+      </figure>
+      <figure>
+        <img src="images/employee3.jpg" alt="Carlos Rivera, Adventure Coordinator" width="180" height="180">
+        <figcaption>Carlos Rivera – Adventure Coordinator</figcaption>
+      </figure>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form" aria-label="Contact Form">
+      <h2>Get In Touch</h2>
+      <form action="#" method="POST" novalidate>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required placeholder="Your full name">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="you@example.com">
+
+        <label>Reason for Contact:</label>
+        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
+        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
+        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5" required placeholder="Write your message here"></textarea>
+
+        <label><input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter</label>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Whitewater Rafting Company</p>
+    <p><a href="images/contact-wireframe.png" target="_blank">View Contact Page Wireframe</a></p>
   </footer>
 
 </body>
