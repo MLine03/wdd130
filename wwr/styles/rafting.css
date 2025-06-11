@@ -1,3 +1,8 @@
+/* === Global Box Sizing for Predictable Layouts === */
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
 /* === Index Page Styles === */
 
 body {
