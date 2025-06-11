@@ -143,3 +143,12 @@ nav a.active {
     align-items: center;
   }
 }
+/* Responsive styling for embedded Google map iframe */
+iframe {
+  width: 100%;         /* Full container width */
+  max-width: 600px;    /* Maximum width */
+  height: 400px;       /* Fixed height */
+  border: 0;           /* Remove border */
+  display: block;      /* Block display for no gaps */
+  margin: 0 auto;      /* Center horizontally */
+}
