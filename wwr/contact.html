@@ -6,12 +6,11 @@
   <meta name="description" content="Contact Whitewater Rafting Adventures for general inquiries, reservations, and suggestions. Reach out to start your adventure!">
   <meta name="author" content="meline">
   <title>Contact | Whitewater Rafting Adventures</title>
-  
-  <!-- Google Fonts with Preconnect -->
+
+  <!-- Google Fonts and CSS -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles/rafting.css">
 </head>
 <body>
@@ -41,10 +40,8 @@
     <section class="map">
       <h2>Find Us on the Map</h2>
       <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d..." 
-        width="600" 
-        height="450" 
-        loading="lazy">
+        src="https://www.google.com/maps/embed?pb=!1m18..." 
+        width="600" height="450" loading="lazy">
       </iframe>
     </section>
 
@@ -64,6 +61,26 @@
       </figure>
     </section>
 
+    <section class="extra-images">
+      <h2>Rafting Adventures</h2>
+      <figure>
+        <img src="images/rafting1.jpg" alt="Rafting team on the river">
+        <figcaption>Thrill-seekers hitting the rapids</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rafting2.jpg" alt="Guides preparing equipment">
+        <figcaption>Guides getting ready for the day</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rafting3.jpg" alt="Peaceful river view">
+        <figcaption>Scenic view of the river</figcaption>
+      </figure>
+      <figure>
+        <img src="images/rafting4.jpg" alt="Family rafting trip">
+        <figcaption>Family enjoying the adventure</figcaption>
+      </figure>
+    </section>
+
     <section class="contact-form">
       <h2>Send Us a Message</h2>
       <form action="#" method="post">
@@ -74,14 +91,22 @@
         <input type="email" id="email" name="email" required>
 
         <p>Purpose of Message:</p>
-        <label><input type="radio" name="purpose" value="general" required> General Inquiry</label>
-        <label><input type="radio" name="purpose" value="reservation"> Reservation Question</label>
-        <label><input type="radio" name="purpose" value="suggestion"> Website Suggestion</label>
+        <label for="purpose-general">
+          <input type="radio" id="purpose-general" name="purpose" value="general" required> General Inquiry
+        </label>
+        <label for="purpose-reservation">
+          <input type="radio" id="purpose-reservation" name="purpose" value="reservation"> Reservation Question
+        </label>
+        <label for="purpose-suggestion">
+          <input type="radio" id="purpose-suggestion" name="purpose" value="suggestion"> Website Suggestion
+        </label>
 
         <label for="message">Message:</label>
         <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label><input type="checkbox" name="newsletter"> Please subscribe me to the monthly newsletter</label>
+        <label for="newsletter">
+          <input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter
+        </label>
 
         <button type="submit">Send Message</button>
       </form>
@@ -95,3 +120,4 @@
 
 </body>
 </html>
+
