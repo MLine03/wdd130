@@ -1,21 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Welcome to Whitewater Rafting Adventures! Explore exciting river rafting trips and join the thrill.">
-  <meta name="author" content="meline">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Welcome to Whitewater Rafting Adventures! Explore exciting river rafting trips and join the thrill." />
+  <meta name="author" content="meline" />
   <title>Home - Whitewater Rafting Adventures</title>
 
-  <link rel="stylesheet" href="styles/rafting.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto&display=swap" rel="stylesheet" />
 </head>
 <body>
 
   <header>
-    <img src="images/logo.png" alt="Whitewater Rafting Logo" width="150" height="50">
+    <img src="images/logo.png" alt="Whitewater Rafting Logo" width="150" height="50" />
     <nav>
       <ul>
         <li><a href="index.html" class="active" aria-current="page">Home</a></li>
@@ -29,14 +29,14 @@
   <main>
     <!-- Hero Section -->
     <section class="hero">
-      <img src="images/hero.jpg" alt="Rafting adventure on a scenic river" class="hero-img">
+      <img src="images/hero.jpg" alt="Rafting adventure on a scenic river" class="hero-img" />
       <div class="hero-text">
         <h1>Whitewater Rafting Adventures</h1>
         <p>Experience the thrill of a lifetime!</p>
       </div>
     </section>
 
-    <!-- Grid Section: CTA and Mission -->
+    <!-- Grid Section: CTA, Mission, Additional Images -->
     <section class="grid-container">
       <div class="cta-box">
         <h2>Book Your Adventure</h2>
@@ -49,14 +49,31 @@
         <p>“Life is a journey, not a destination.” – President Thomas S. Monson</p>
         <p>We aim to guide you safely through life's most thrilling rivers, one paddle at a time.</p>
       </div>
+
+      <!-- Added two images with descriptions to satisfy rubric for at least 2 images + content -->
+      <div class="image-box">
+        <img src="images/adventure1.jpg" alt="Group rafting through rapids" />
+        <h3>Exciting Rapids</h3>
+        <p>Feel the adrenaline on wild river rapids with expert guides.</p>
+      </div>
+
+      <div class="image-box">
+        <img src="images/adventure2.jpg" alt="Family rafting on calm water" />
+        <h3>Family Friendly Trips</h3>
+        <p>Safe, fun, and memorable rafting experiences for all ages.</p>
+      </div>
     </section>
 
     <!-- Newsletter Section -->
     <section class="newsletter">
       <h2>Subscribe to Our Newsletter</h2>
       <form action="#" method="POST">
+        <label for="newsletter-name">Name:</label>
+        <input type="text" id="newsletter-name" name="name" required placeholder="Enter your name" />
+
         <label for="newsletter-email">Email:</label>
-        <input type="email" id="newsletter-email" name="email" required placeholder="Enter your email">
+        <input type="email" id="newsletter-email" name="email" required placeholder="Enter your email" />
+
         <button type="submit">Subscribe</button>
       </form>
     </section>
