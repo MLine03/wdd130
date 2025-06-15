@@ -53,28 +53,21 @@ main img {
   border-radius: 8px;
 }
 
-/* Aside section styling */
+/* Style aside */
 aside {
-  width: 250px;
+  width: 90%;
+  max-width: 900px;
   margin: 20px auto;
   border: 1px solid #ccc;
   padding: 15px;
-  background-color: #f9f9f9;
+  background-color: #f0f0f0;
   color: #333;
-  border-radius: 8px;
 }
 
-/* Aside heading */
-aside h2 {
-  text-align: center;
-  margin-bottom: 10px;
-}
-
-/* Aside image styling */
+/* Image inside aside */
 aside img {
   width: 200px;
   height: auto;
   display: block;
-  margin: 0 auto 10px;
-  border-radius: 6px;
+  margin-bottom: 10px;
 }
