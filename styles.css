@@ -1,0 +1,53 @@
+/* Style nav element */
+nav {
+    background-color: #e0f7fa;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 20px;
+  }
+  
+  /* Style nav links */
+  nav a {
+    margin-right: 15px;
+    text-decoration: none;
+    color: #007acc;
+  }
+  
+  nav a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Style main heading */
+  h1 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #222;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Limit main width and center it */
+  main {
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  /* Paragraph padding reset */
+  p {
+    padding: 0;
+  }
+  
+  /* Footer styling */
+  footer {
+    margin-top: 30px;
+    border-top: 1px solid #999;
+    text-align: center;
+    padding-top: 10px;
+  }
+  
+  /* Profile image */
+  main img {
+    display: block;
+    margin: 0 auto 20px;
+    border-radius: 8px;
+  }
+  
