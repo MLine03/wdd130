@@ -1,53 +1,80 @@
 /* Style nav element */
 nav {
-    background-color: #e0f7fa;
-    padding: 10px;
-    border-radius: 5px;
-    margin-bottom: 20px;
-  }
-  
-  /* Style nav links */
-  nav a {
-    margin-right: 15px;
-    text-decoration: none;
-    color: #007acc;
-  }
-  
-  nav a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Style main heading */
-  h1 {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #222;
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  /* Limit main width and center it */
-  main {
-    max-width: 900px;
-    margin: 0 auto;
-  }
-  
-  /* Paragraph padding reset */
-  p {
-    padding: 0;
-  }
-  
-  /* Footer styling */
-  footer {
-    margin-top: 30px;
-    border-top: 1px solid #999;
-    text-align: center;
-    padding-top: 10px;
-  }
-  
-  /* Profile image */
-  main img {
-    display: block;
-    margin: 0 auto 20px;
-    border-radius: 8px;
-  }
-  
+  background-color: #e0f7fa;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 20px;
+}
+
+/* Style nav links */
+nav a {
+  margin-right: 15px;
+  text-decoration: none;
+  color: #007acc;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* Style main heading */
+h1 {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: #222;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+/* Limit main width and center it */
+main {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+/* Paragraph padding reset */
+p {
+  padding: 0;
+}
+
+/* Footer styling */
+footer {
+  margin-top: 30px;
+  border-top: 1px solid #999;
+  text-align: center;
+  padding-top: 10px;
+}
+
+/* Profile image inside main */
+main img {
+  display: block;
+  margin: 0 auto 20px;
+  width: 150px;
+  height: auto;
+  border-radius: 8px;
+}
+
+/* Aside section styling */
+aside {
+  width: 250px;
+  margin: 20px auto;
+  border: 1px solid #ccc;
+  padding: 15px;
+  background-color: #f9f9f9;
+  color: #333;
+  border-radius: 8px;
+}
+
+/* Aside heading */
+aside h2 {
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+/* Aside image styling */
+aside img {
+  width: 200px;
+  height: auto;
+  display: block;
+  margin: 0 auto 10px;
+  border-radius: 6px;
+}
