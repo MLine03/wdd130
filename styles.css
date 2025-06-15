@@ -57,25 +57,18 @@ main img {
 aside {
   width: 90%;
   max-width: 900px;
-  margin: 30px auto;
-  border: 1px solid #ccc;
+  margin: 20px auto;
   padding: 15px;
-  background-color: #f1f1f1;
+  border: 1px solid #ccc;
+  background-color: #f0f0f0;
   color: #333;
-  border-radius: 8px;
 }
 
-/* Image in aside */
+/* Aside image styling */
 aside img {
   width: 200px;
   height: auto;
   display: block;
   margin: 10px auto;
-  border-radius: 5px;
-}
-
-/* Centered heading in aside */
-aside h2 {
-  text-align: center;
-  font-size: 1.5rem;
+  border-radius: 8px;
 }
