@@ -46,28 +46,36 @@ footer {
 
 /* Profile image inside main */
 main img {
-  display: block;
-  margin: 0 auto 20px;
   width: 150px;
   height: auto;
+  display: block;
+  margin: 0 auto 20px;
   border-radius: 8px;
 }
 
-/* Style aside */
+/* Aside section styling */
 aside {
   width: 90%;
   max-width: 900px;
-  margin: 20px auto;
+  margin: 30px auto;
   border: 1px solid #ccc;
   padding: 15px;
-  background-color: #f0f0f0;
+  background-color: #f1f1f1;
   color: #333;
+  border-radius: 8px;
 }
 
-/* Image inside aside */
+/* Image in aside */
 aside img {
   width: 200px;
   height: auto;
   display: block;
-  margin-bottom: 10px;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+/* Centered heading in aside */
+aside h2 {
+  text-align: center;
+  font-size: 1.5rem;
 }
