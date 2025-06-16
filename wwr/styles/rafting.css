@@ -13,12 +13,15 @@ header {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  flex-wrap: wrap;
 }
 
 nav ul {
   list-style: none;
   display: flex;
   gap: 1rem;
+  padding: 0;
+  margin: 0;
 }
 
 nav a {
@@ -36,10 +39,11 @@ section h1, section h2 {
   color: #0077cc;
 }
 
-.adventures-gallery {
+.adventures-gallery,
+.employee-grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-  gap: 1rem;
+  gap: 1.5rem;
   margin-top: 2rem;
 }
 
@@ -71,29 +75,12 @@ footer .social-icons a img {
   margin: 0 0.25rem;
 }
 
-/* ----------- CONTACT PAGE STYLES ----------- */
+/* CONTACT PAGE STYLES */
 
 .contact-info, .employees, .contact-form {
   max-width: 800px;
   margin: 0 auto;
   padding: 1rem;
-}
-
-.employee-grid {
-  display: flex;
-  gap: 1rem;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-
-.employee-grid figure {
-  text-align: center;
-  width: 200px;
-}
-
-.employee-grid img {
-  width: 100%;
-  border-radius: 8px;
 }
 
 .contact-form form {
@@ -114,10 +101,16 @@ footer .social-icons a img {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-family: 'Poppins', sans-serif;
+  font-size: 1rem;
 }
 
 .contact-form textarea {
   resize: vertical;
+}
+
+.contact-form input[type="radio"],
+.contact-form input[type="checkbox"] {
+  margin-right: 0.5rem;
 }
 
 .contact-form button {

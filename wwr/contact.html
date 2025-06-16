@@ -2,11 +2,13 @@
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width,initial-scale=1.0">
   <meta name="description" content="Contact Rapids Rafting Company for reservations, questions, or feedback.">
   <meta name="author" content="Meline Levao">
   <title>Rapids Rafting | Contact Us</title>
   <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
@@ -15,7 +17,8 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
@@ -23,17 +26,14 @@
 
   <main>
     <section>
-      <h2>Contact Us</h2>
-      <p>We’d love to hear from you! Reach out for any inquiries, reservations, or feedback.</p>
-      <p><strong>Address:</strong> 123 Rapids Lane, Moab, Utah 84532</p>
-      <p><strong>Phone:</strong> (435) 555-1234</p>
-      <p><strong>Email:</strong> contact@rapidsrafting.com</p>
+      <h2>Contact Information</h2>
+      <p>Address: 123 River Way, Moab, Utah</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@rapidsrafting.com</p>
 
-      <h3>Our Location</h3>
-      <iframe 
-        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38967.11918574615!2d-109.56653015462508!3d38.573315180553085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1d5d6442c4b%3A0x1f7e6ecb5a3b5ea5!2sMoab%2C%20UT!5e0!3m2!1sen!2sus!4v1718661234567!5m2!1sen!2sus" 
-        width="100%" height="350" allowfullscreen 
-        loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12576.018342264948!2d-109.5521!3d38.5733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1e4b0cfc0cb%3A0x6d5292ff54f6c263!2sMoab%2C%20UT!5e0!3m2!1sen!2sus!4v1718567890123"
+        width="100%" height="300" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
 
@@ -41,41 +41,54 @@
       <h2>Meet Our Team</h2>
       <div class="adventures-gallery">
         <figure>
-          <img src="images/employee1.jpg" alt="Smiling rafting employee 1">
-          <figcaption>Emily – Lead Guide</figcaption>
+          <img src="images/employee1.jpg" alt="Jane - Lead Guide">
+          <figcaption>Jane – Lead Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/employee2.jpg" alt="Smiling rafting employee 2">
-          <figcaption>Jake – River Safety Expert</figcaption>
+          <img src="images/employee2.jpg" alt="Chris - Booking Specialist">
+          <figcaption>Chris – Booking Specialist</figcaption>
         </figure>
         <figure>
-          <img src="images/employee3.jpg" alt="Smiling rafting employee 3">
-          <figcaption>Sara – Customer Service Manager</figcaption>
+          <img src="images/employee3.jpg" alt="Maya - River Safety">
+          <figcaption>Maya – River Safety</figcaption>
+        </figure>
+        <figure>
+          <img src="images/employee4.jpg" alt="Jake - Equipment Specialist">
+          <figcaption>Jake – Equipment Specialist</figcaption>
         </figure>
       </div>
     </section>
 
     <section>
       <h2>Send Us a Message</h2>
-      <form action="#" method="post" class="contact-form">
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+      <form class="contact-form">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+        <label for="email">Email:</label>
+        <input type="text" id="email" name="email">
 
-        <p>Purpose of message:</p>
-        <label><input type="radio" id="inquiry" name="purpose" value="inquiry"> General Inquiry</label><br>
-        <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label><br>
-        <label><input type="radio" id="suggestion" name="purpose" value="suggestion"> Website Suggestion</label><br>
+        <p>Purpose of Message:</p>
+        <label>
+          <input type="radio" name="purpose" id="general" value="General Inquiry">
+          General Inquiry
+        </label><br>
+        <label>
+          <input type="radio" name="purpose" id="reservation" value="Reservation Question">
+          Reservation Question
+        </label><br>
+        <label>
+          <input type="radio" name="purpose" id="suggestion" value="Website Suggestion">
+          Website Suggestion
+        </label><br>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="4" required></textarea>
+        <textarea id="message" name="message" rows="5" cols="33"></textarea>
 
         <label>
-          <input type="checkbox" id="subscribe" name="subscribe">
+          <input type="checkbox" id="newsletter" name="newsletter">
           Please subscribe me to the monthly newsletter
-        </label>
+        </label><br>
 
         <button type="submit">Send Message</button>
       </form>
@@ -89,7 +102,7 @@
       <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
       <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
     </div>
-    <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
+    <p><a href="images/contact-wireframe.png" target="_blank">View Wireframe</a></p>
   </footer>
 </body>
 </html>
