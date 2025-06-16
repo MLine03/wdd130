@@ -1,103 +1,93 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width,initial-scale=1.0">
-  <meta name="description" content="About page for Rapids White Water Rafting company">
-  <meta name="author" content="Meline Levao">
-  <title>Rapids Rafting | About Us</title>
-  <link rel="stylesheet" href="styles/rafting.css">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Contact page for Rapids White Water Rafting. Get in touch, ask questions, or reach our team." />
+  <meta name="author" content="Meline Levao" />
+  <title>Rapids Rafting | Contact Us</title>
+  <link rel="stylesheet" href="styles/rafting.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
 </head>
 <body>
   <header>
-    <img src="images/logo.png" alt="Rapids Rafting Logo">
+    <h1>Rapids Rafting Company</h1>
     <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About Us</a>
-      <a href="trips.html">Trips</a>
-      <a href="contact.html">Contact</a>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="trips.html">Trips</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
     </nav>
   </header>
 
   <main>
-    <section>
-      <h1>Rapids Rafting Company</h1>
-      <p>Welcome to Rapids Rafting! Our team is passionate about guiding you on thrilling white water adventures. Explore nature, test your limits, and make unforgettable memories.</p>
+    <section class="contact-info">
+      <h2>Contact Information</h2>
+      <p>Address: 123 Whitewater Way, River Town, CO 80000</p>
+      <p>Phone: (555) 123-4567</p>
+      <p>Email: info@rapidsrafting.com</p>
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+      </div>
     </section>
 
-    <section>
-      <h2>Our Purpose</h2>
-      <p>We’re here to deliver safe, exciting, and eco-friendly rafting experiences that help connect you with the outdoors.</p>
-    </section>
-
-    <section>
-      <h2>Our History</h2>
-      <p>Founded in 2008, Rapids Rafting has grown from a small family business into a trusted name in outdoor adventures. Thousands of guests have ridden our rapids!</p>
-    </section>
-
-    <section>
-      <h2>Our Rafting Adventures</h2>
-      <div class="gallery">
+    <section class="employees">
+      <h2>Meet Our Team</h2>
+      <div class="employee-grid">
         <figure>
-          <img src="images/rafting1.jpg" alt="Group navigating white water rapids">
-          <figcaption>Teamwork in action on wild rapids</figcaption>
+          <img src="images/employee1.jpg" alt="Smiling employee guide John" />
+          <figcaption>John – Lead Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting2.jpg" alt="Raft starting from riverbank">
-          <figcaption>Launching into the river</figcaption>
+          <img src="images/employee2.jpg" alt="Smiling employee support Maria" />
+          <figcaption>Maria – Customer Support</figcaption>
         </figure>
         <figure>
-          <img src="images/rafting3.jpg" alt="Guide giving instructions to the group">
-          <figcaption>Expert guidance ensures safety</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting4.jpg" alt="Rafters celebrating in the water">
-          <figcaption>Joy after conquering the waves</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting5.jpg" alt="Calm section of the river">
-          <figcaption>Scenic float through canyons</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting6.jpg" alt="Raft passing under a bridge">
-          <figcaption>Urban meets nature on the river</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting7.jpg" alt="Close-up of splashing raft">
-          <figcaption>Adrenaline-pumping splash zones</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting8.jpg" alt="Sunset rafting adventure">
-          <figcaption>Golden hour on the water</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting9.jpg" alt="Smiling group with paddles">
-          <figcaption>Memories made together</figcaption>
-        </figure>
-        <figure>
-          <img src="images/rafting10.jpg" alt="Wide view of rafting through forest">
-          <figcaption>Nature’s beauty surrounds us</figcaption>
+          <img src="images/employee3.jpg" alt="Smiling manager Alex" />
+          <figcaption>Alex – Trip Manager</figcaption>
         </figure>
       </div>
+    </section>
+
+    <section class="contact-form">
+      <h2>Send Us a Message</h2>
+      <form action="#" method="post">
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" required />
+
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+
+        <p>Purpose of Message:</p>
+        <label><input type="radio" id="general" name="purpose" value="general" required /> General Inquiry</label><br />
+        <label><input type="radio" id="reservation" name="purpose" value="reservation" /> Reservation Question</label><br />
+        <label><input type="radio" id="suggestion" name="purpose" value="suggestion" /> Website Suggestion</label><br />
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+
+        <label>
+          <input type="checkbox" id="subscribe" name="subscribe" />
+          Please subscribe me to the monthly newsletter
+        </label>
+
+        <button type="submit">Send Message</button>
+      </form>
     </section>
   </main>
 
   <footer>
-    <p>&copy; 2025 Rapids Rafting | Meline Levao</p>
-    <div class="socials">
-      <a href="https://facebook.com">
-        <img src="images/facebook.jpg" alt="Facebook">
-      </a>
-      <a href="https://twitter.com">
-        <img src="images/twitter.jpg" alt="Twitter">
-      </a>
-      <a href="https://instagram.com">
-        <img src="images/instagram.jpg" alt="Instagram">
-      </a>
+    <p>&copy; 2025 Rapids Rafting Company</p>
+    <div class="social-icons">
+      <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
+      <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
+      <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
     </div>
+    <p><a href="images/contact-wireframe.png" target="_blank">View Wireframe</a></p>
   </footer>
 </body>
 </html>
