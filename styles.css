@@ -1,47 +1,30 @@
-/* Style nav element */
-nav {
-  background-color: #e0f7fa;
-  padding: 10px;
-  border-radius: 5px;
-  margin-bottom: 20px;
-}
-
-/* Style nav links */
-nav a {
-  margin-right: 15px;
-  text-decoration: none;
-  color: #007acc;
-}
-
-nav a:hover {
-  text-decoration: underline;
-}
-
-/* Style main heading */
-h1 {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: #222;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-/* Limit main width and center it */
-main {
-  max-width: 900px;
-  margin: 0 auto;
-}
-
-/* Paragraph padding reset */
-p {
+/* General reset and body styles */
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  margin: 0;
   padding: 0;
 }
 
-/* Footer styling */
-footer {
-  margin-top: 30px;
-  border-top: 1px solid #999;
+/* Header navigation */
+nav {
+  background-color: #003366;
+  padding: 10px;
   text-align: center;
-  padding-top: 10px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+/* Heading 1 */
+h1 {
+  font-size: 2rem;
+  text-align: center;
+  margin-top: 20px;
 }
 
 /* Profile image inside main */
@@ -49,26 +32,44 @@ main img {
   width: 150px;
   height: auto;
   display: block;
-  margin: 0 auto 20px;
-  border-radius: 8px;
+  margin: 10px auto;
 }
 
-/* Aside section styling */
+/* Main content */
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Aside styles */
 aside {
   width: 90%;
-  max-width: 900px;
-  margin: 20px auto;
-  padding: 15px;
+  max-width: 600px;
+  margin: 30px auto;
   border: 1px solid #ccc;
-  background-color: #f0f0f0;
-  color: #333;
+  padding: 20px;
+  background-color: #f0f8ff;
+  color: #000;
 }
 
-/* Aside image styling */
 aside img {
   width: 200px;
   height: auto;
   display: block;
   margin: 10px auto;
-  border-radius: 8px;
+}
+
+/* Paragraph padding */
+p {
+  padding: 0;
+}
+
+/* Footer styles */
+footer {
+  margin-top: 40px;
+  border-top: 2px solid #ccc;
+  text-align: center;
+  padding: 10px;
+  background-color: #f8f8f8;
 }
