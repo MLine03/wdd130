@@ -27,13 +27,14 @@
   <main>
     <section>
       <h2>Contact Information</h2>
-      <p>Address: 123 River Way, Moab, Utah</p>
-      <p>Phone: (555) 123-4567</p>
-      <p>Email: info@rapidsrafting.com</p>
+      <p><strong>Address:</strong> 123 River Way, Moab, Utah</p>
+      <p><strong>Phone:</strong> (555) 123-4567</p>
+      <p><strong>Email:</strong> info@rapidsrafting.com</p>
 
+      <h3>Our Location</h3>
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12576.018342264948!2d-109.5521!3d38.5733!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8747e1e4b0cfc0cb%3A0x6d5292ff54f6c263!2sMoab%2C%20UT!5e0!3m2!1sen!2sus!4v1718567890123"
-        width="100%" height="300" style="border:0" allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
+        allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade">
       </iframe>
     </section>
 
@@ -41,19 +42,19 @@
       <h2>Meet Our Team</h2>
       <div class="adventures-gallery">
         <figure>
-          <img src="images/employee1.jpg" alt="Jane - Lead Guide">
+          <img src="images/employee1.jpg" alt="Jane – Lead Guide">
           <figcaption>Jane – Lead Guide</figcaption>
         </figure>
         <figure>
-          <img src="images/employee2.jpg" alt="Chris - Booking Specialist">
+          <img src="images/employee2.jpg" alt="Chris – Booking Specialist">
           <figcaption>Chris – Booking Specialist</figcaption>
         </figure>
         <figure>
-          <img src="images/employee3.jpg" alt="Maya - River Safety">
+          <img src="images/employee3.jpg" alt="Maya – River Safety">
           <figcaption>Maya – River Safety</figcaption>
         </figure>
         <figure>
-          <img src="images/employee4.jpg" alt="Jake - Equipment Specialist">
+          <img src="images/employee4.jpg" alt="Jake – Equipment Specialist">
           <figcaption>Jake – Equipment Specialist</figcaption>
         </figure>
       </div>
@@ -61,34 +62,22 @@
 
     <section>
       <h2>Send Us a Message</h2>
-      <form class="contact-form">
+      <form class="contact-form" action="#" method="post">
         <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+        <input type="text" id="name" name="name" required>
 
         <label for="email">Email:</label>
-        <input type="text" id="email" name="email">
+        <input type="email" id="email" name="email" required>
 
         <p>Purpose of Message:</p>
-        <label>
-          <input type="radio" name="purpose" id="general" value="General Inquiry">
-          General Inquiry
-        </label><br>
-        <label>
-          <input type="radio" name="purpose" id="reservation" value="Reservation Question">
-          Reservation Question
-        </label><br>
-        <label>
-          <input type="radio" name="purpose" id="suggestion" value="Website Suggestion">
-          Website Suggestion
-        </label><br>
+        <label><input type="radio" name="purpose" id="general" value="General Inquiry" required> General Inquiry</label><br>
+        <label><input type="radio" name="purpose" id="reservation" value="Reservation Question"> Reservation Question</label><br>
+        <label><input type="radio" name="purpose" id="suggestion" value="Website Suggestion"> Website Suggestion</label>
 
         <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5" cols="33"></textarea>
+        <textarea id="message" name="message" rows="5" required></textarea>
 
-        <label>
-          <input type="checkbox" id="newsletter" name="newsletter">
-          Please subscribe me to the monthly newsletter
-        </label><br>
+        <label><input type="checkbox" id="newsletter" name="newsletter"> Please subscribe me to the monthly newsletter</label>
 
         <button type="submit">Send Message</button>
       </form>
