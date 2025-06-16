@@ -1,177 +1,72 @@
-/* Google Fonts Import */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
-/* Root Variables */
-:root {
-  --primary-color: #07beb8;
-  --secondary-color: #3dccc7;
-  --accent1-color: #68d8d6;
-  --accent2-color: #9ceaef;
-  --heading-font: 'Poppins', sans-serif;
-  --body-font: 'Roboto', sans-serif;
-}
-
-/* Reset */
-* {
+body {
+  font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
-/* Body Styling */
-body {
-  font-family: var(--body-font);
-  background-color: #fff;
-  color: var(--accent1-color);
-  line-height: 1.6;
-}
-
-/* Layout Width */
-header, main, footer {
-  width: 840px;
-  margin: 0 auto;
-}
-
-/* Headings */
-h1, h2 {
-  font-family: var(--heading-font);
-  color: var(--primary-color);
-}
-
-/* Structure Spacing */
-nav, p, section, article {
-  margin: 16px;
-  padding: 8px;
-}
-
-/* Header Styling */
 header {
+  background-color: #0077cc;
+  padding: 1rem;
+  color: white;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 16px;
 }
 
-/* Navigation Styling */
-nav a {
-  color: var(--primary-color);
-  font-weight: 700;
-  margin-right: 12px;
-  text-decoration: none;
-}
-
-nav a:hover {
-  color: var(--secondary-color);
-  text-decoration: underline;
-}
-
-/* Hero Section */
-.hero {
-  position: relative;
-}
-
-.hero img {
-  display: block;
-  width: 100%;
-  height: auto;
-}
-
-.hero h1 {
-  position: absolute;
-  top: 20px;
-  width: 100%;
-  padding: 16px;
-  text-align: center;
-  opacity: 0.7;
-  background-color: var(--accent1-color);
-  color: #fff;
-  font-size: 2rem;
-}
-
-.hero article {
-  position: absolute;
-  bottom: 20px;
-  left: 20px;
-  background-color: rgba(255, 255, 255, 0.7);
-  padding: 10px;
-  max-width: 300px;
-  border-radius: 8px;
-}
-
-.hero article img {
-  float: right;
-  width: 125px;
-  margin-left: 10px;
-  border-radius: 4px;
-}
-
-/* Adventure Gallery */
-.adventures-gallery {
+nav ul {
+  list-style: none;
   display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  gap: 16px;
-  padding: 0 16px;
+  gap: 1rem;
 }
 
-.adventures-gallery figure {
-  width: 160px;
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 2rem;
+}
+
+section h1, section h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #0077cc;
+}
+
+.adventures-gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+figure {
+  margin: 0;
   text-align: center;
-  background-color: #f0f0f0;
-  border-radius: 8px;
-  padding: 8px;
 }
 
-.adventures-gallery img {
+figure img {
   width: 100%;
   height: auto;
-  border-radius: 6px;
+  border-radius: 8px;
 }
 
-.adventures-gallery figcaption {
-  margin-top: 6px;
-  font-weight: bold;
-  color: var(--primary-color);
-}
-
-/* Footer Styling */
 footer {
-  background-color: var(--accent2-color);
-  color: #000;
+  background-color: #222;
+  color: #fff;
   text-align: center;
-  padding: 12px;
+  padding: 1rem;
 }
 
-.socialmedia img {
-  width: 24px;
-  margin: 0 8px;
+footer .social-icons {
+  margin-top: 0.5rem;
 }
 
-.socialmedia a {
-  text-decoration: none;
-}
-
-/* Responsive Layout */
-@media (max-width: 860px) {
-  header, main, footer {
-    width: 95%;
-  }
-
-  .hero h1 {
-    font-size: 1.3rem;
-  }
-
-  .adventures-gallery figure {
-    width: 45%;
-  }
-
-  header {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  nav a {
-    display: block;
-    margin: 6px 0;
-  }
+footer .social-icons a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.25rem;
 }
