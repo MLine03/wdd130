@@ -21,7 +21,9 @@
 /* Body Styling */
 body {
   font-family: var(--body-font);
+  background-color: #fff;
   color: var(--accent1-color);
+  line-height: 1.6;
 }
 
 /* Layout Width */
@@ -36,13 +38,34 @@ h1, h2 {
   color: var(--primary-color);
 }
 
-/* Structure */
+/* Structure Spacing */
 nav, p, section, article {
   margin: 16px;
   padding: 8px;
 }
 
-/* Hero Styling */
+/* Header Styling */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+}
+
+/* Navigation Styling */
+nav a {
+  color: var(--primary-color);
+  font-weight: 700;
+  margin-right: 12px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: var(--secondary-color);
+  text-decoration: underline;
+}
+
+/* Hero Section */
 .hero {
   position: relative;
 }
@@ -62,6 +85,7 @@ nav, p, section, article {
   opacity: 0.7;
   background-color: var(--accent1-color);
   color: #fff;
+  font-size: 2rem;
 }
 
 .hero article {
@@ -71,15 +95,62 @@ nav, p, section, article {
   background-color: rgba(255, 255, 255, 0.7);
   padding: 10px;
   max-width: 300px;
+  border-radius: 8px;
 }
 
 .hero article img {
   float: right;
   width: 125px;
   margin-left: 10px;
+  border-radius: 4px;
 }
 
-/* Footer Social Media */
+/* Section Images (Rafting Gallery) */
+section img {
+  width: 160px;
+  height: auto;
+  margin: 8px;
+  border-radius: 6px;
+}
+
+/* Footer Styling */
+footer {
+  background-color: var(--accent2-color);
+  color: #000;
+  text-align: center;
+  padding: 12px;
+}
+
+.socialmedia img {
+  width: 24px;
+  margin: 0 8px;
+}
+
 .socialmedia a {
   text-decoration: none;
+}
+
+/* Responsive Layout */
+@media (max-width: 860px) {
+  header, main, footer {
+    width: 95%;
+  }
+
+  .hero h1 {
+    font-size: 1.3rem;
+  }
+
+  section img {
+    width: 100px;
+  }
+
+  header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  nav a {
+    display: block;
+    margin: 6px 0;
+  }
 }
