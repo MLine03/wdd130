@@ -1,15 +1,15 @@
 <!DOCTYPE html>
 <html lang="en-US">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Contact page for Rapids White Water Rafting. Get in touch, ask questions, or reach our team." />
-  <meta name="author" content="Meline Levao" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Contact Rapids Rafting for reservations, questions, or suggestions. We're happy to help you plan your next adventure!">
+  <meta name="author" content="Meline Levao">
   <title>Rapids Rafting | Contact Us</title>
-  <link rel="stylesheet" href="styles/rafting.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -17,77 +17,89 @@
     <nav>
       <ul>
         <li><a href="index.html">Home</a></li>
-        <li><a href="about.html">About Us</a></li>
-        <li><a href="trips.html">Trips</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="adventures.html">Adventures</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="contact-info">
-      <h2>Contact Information</h2>
-      <p>Address: 123 Whitewater Way, River Town, CO 80000</p>
-      <p>Phone: (555) 123-4567</p>
-      <p>Email: info@rapidsrafting.com</p>
+    <section>
+      <h2>Contact Us</h2>
+      <p>We'd love to hear from you. Use the form below or reach out directly using our contact information.</p>
+
+      <div class="contact-info">
+        <p><strong>Address:</strong> 123 River Lane, Adventure City, CO 80000</p>
+        <p><strong>Phone:</strong> (123) 456-7890</p>
+        <p><strong>Email:</strong> info@rapidsrafting.com</p>
+      </div>
+
       <div class="map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18..." width="100%" height="300" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe 
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.080968256343!2d-122.42067968468554!3d37.779026279758155!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5c3d3c9f%3A0xf5476e015f291d20!2sSan%20Francisco%2C%20CA!5e0!3m2!1sen!2sus!4v1718660000000!5m2!1sen!2sus" 
+          width="100%" 
+          height="350" 
+          allowfullscreen 
+          loading="lazy" 
+          referrerpolicy="no-referrer-when-downgrade">
+        </iframe>
       </div>
-    </section>
 
-    <section class="employees">
-      <h2>Meet Our Team</h2>
-      <div class="employee-grid">
-        <figure>
-          <img src="images/employee1.jpg" alt="Smiling employee guide John" />
-          <figcaption>John – Lead Guide</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee2.jpg" alt="Smiling employee support Maria" />
-          <figcaption>Maria – Customer Support</figcaption>
-        </figure>
-        <figure>
-          <img src="images/employee3.jpg" alt="Smiling manager Alex" />
-          <figcaption>Alex – Trip Manager</figcaption>
-        </figure>
-      </div>
-    </section>
+      <section class="employee-gallery">
+        <h3>Meet Our Team</h3>
+        <div class="adventures-gallery">
+          <figure>
+            <img src="images/guide1.jpg" alt="Rafting guide Lisa smiling in gear">
+            <figcaption>Lisa – Reservations Manager</figcaption>
+          </figure>
+          <figure>
+            <img src="images/guide2.jpg" alt="Experienced river guide John standing by raft">
+            <figcaption>John – Head River Guide</figcaption>
+          </figure>
+          <figure>
+            <img src="images/staff.jpg" alt="Maria helping guests with gear">
+            <figcaption>Maria – Guest Services</figcaption>
+          </figure>
+        </div>
+      </section>
 
-    <section class="contact-form">
-      <h2>Send Us a Message</h2>
-      <form action="#" method="post">
-        <label for="fullname">Full Name:</label>
-        <input type="text" id="fullname" name="fullname" required />
+      <section>
+        <h3>Send Us a Message</h3>
+        <form action="#" method="post" class="contact-form">
+          <label for="fullname">Full Name:</label>
+          <input type="text" id="fullname" name="fullname" required>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required />
+          <label for="email">Email Address:</label>
+          <input type="email" id="email" name="email" required>
 
-        <p>Purpose of Message:</p>
-        <label><input type="radio" id="general" name="purpose" value="general" required /> General Inquiry</label><br />
-        <label><input type="radio" id="reservation" name="purpose" value="reservation" /> Reservation Question</label><br />
-        <label><input type="radio" id="suggestion" name="purpose" value="suggestion" /> Website Suggestion</label><br />
+          <p>Purpose of message:</p>
+          <label><input type="radio" id="general" name="purpose" value="general" required> General Inquiry</label><br>
+          <label><input type="radio" id="reservation" name="purpose" value="reservation"> Reservation Question</label><br>
+          <label><input type="radio" id="website" name="purpose" value="website"> Website Suggestion</label>
 
-        <label for="message">Your Message:</label>
-        <textarea id="message" name="message" rows="5" required></textarea>
+          <label for="message">Message:</label>
+          <textarea id="message" name="message" rows="4" required></textarea>
 
-        <label>
-          <input type="checkbox" id="subscribe" name="subscribe" />
-          Please subscribe me to the monthly newsletter
-        </label>
+          <label>
+            <input type="checkbox" id="subscribe" name="subscribe">
+            Please subscribe me to the monthly newsletter
+          </label>
 
-        <button type="submit">Send Message</button>
-      </form>
+          <button type="submit">Send Message</button>
+        </form>
+      </section>
     </section>
   </main>
 
   <footer>
     <p>&copy; 2025 Rapids Rafting Company</p>
     <div class="social-icons">
-      <a href="#"><img src="images/facebook-icon.png" alt="Facebook" /></a>
-      <a href="#"><img src="images/twitter-icon.png" alt="Twitter" /></a>
-      <a href="#"><img src="images/instagram-icon.png" alt="Instagram" /></a>
+      <a href="#"><img src="images/facebook.jpg" alt="Facebook"></a>
+      <a href="#"><img src="images/twitter.jpg" alt="Twitter"></a>
+      <a href="#"><img src="images/instagram.jpg" alt="Instagram"></a>
     </div>
-    <p><a href="images/contact-wireframe.png" target="_blank">View Wireframe</a></p>
+    <p><a href="images/contact-wireframe.png">View Wireframe</a></p>
   </footer>
 </body>
 </html>
