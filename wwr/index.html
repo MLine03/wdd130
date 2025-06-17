@@ -1,42 +1,77 @@
-<<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en-US">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Meline Levao | WDD 130</title>
-  <meta name="description" content="Meline Levao's homepage for WDD 130 at BYU-Idaho. Explore web development basics, HTML, and CSS projects.">
+  <meta name="description" content="Home page for Rapids White Water Rafting company">
   <meta name="author" content="Meline Levao">
-  <link rel="stylesheet" href="styles/styles.css">
+  <title>Rapids Rafting | Home</title>
+  <link rel="stylesheet" href="styles/rafting.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
+    <img src="images/logo.png" alt="Rapids Rafting Logo">
     <nav>
       <a href="index.html">Home</a>
-      <a href="wwr/index.html">W1</a>
-      <a href="#">W2</a>
-      <a href="#">W3</a>
-      <a href="wwr/about.html">W4</a>
-      <a href="#">W5</a>
-      <a href="#">W6</a>
-      <a href="#">W7</a>
+      <a href="about.html">About Us</a>
+      <a href="trips.html">Trips</a>
+      <a href="contact.html">Contact</a>
     </nav>
   </header>
 
   <main>
-    <h1>Welcome to My Home Page</h1>
-    <img src="images/profile.jpg" alt="Profile picture of Meline Levao" width="200">
-    <p>Hello! I'm Meline Levao, a student in the WDD 130 Web Fundamentals course at BYU-Idaho. This site will showcase my journey in learning HTML and CSS.</p>
-    <p>I enjoy learning about web development and creating user-friendly designs. Through this course, I hope to gain practical skills that I can use professionally.</p>
+    <section class="hero">
+      <img src="images/hero.jpg" alt="Rafting Adventure" class="hero-img">
+      <div class="hero-text">
+        <h1>Experience the Rush of Rapids</h1>
+        <p>Adventure. Nature. Thrills. Plan your journey with us.</p>
+      </div>
+    </section>
+
+    <section class="newsletter">
+      <h2>Join Our Newsletter</h2>
+      <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <button type="submit">Subscribe</button>
+      </form>
+    </section>
+
+    <section class="call-to-action">
+      <h2>Start Your Rafting Adventure</h2>
+      <p>Check out our <a href="trips.html">Trips</a> page to find the perfect white water experience for you and your crew!</p>
+    </section>
+
+    <section class="highlights">
+      <div class="highlight">
+        <img src="images/profile.jpg" alt="Rafting Team">
+        <h3>Expert Guides</h3>
+        <p>All our tours are led by certified and experienced river guides.</p>
+      </div>
+      <div class="highlight">
+        <img src="images/south-jordan.jpg" alt="Rafting Location">
+        <h3>Beautiful Locations</h3>
+        <p>Explore some of the most stunning rivers in the country.</p>
+      </div>
+    </section>
   </main>
 
-  <aside>
-    <h2>South Jordan, Utah</h2>
-    <img src="images/south-jordan.jpg" alt="View of South Jordan, Utah" width="300">
-    <p>South Jordan is a beautiful city located in the Salt Lake Valley. It offers scenic mountain views, parks, and a friendly community. It's a great place to live and explore outdoor activities.</p>
-  </aside>
-
   <footer>
-    <p>&copy; 2025 Meline Levao. All rights reserved.</p>
+    <p>&copy; 2025 Rapids Rafting | Meline Levao</p>
+    <div class="socials">
+      <a href="https://facebook.com">
+        <img src="images/facebook.jpg" alt="Facebook">
+      </a>
+      <a href="https://twitter.com">
+        <img src="images/twitter.jpg" alt="Twitter">
+      </a>
+      <a href="https://instagram.com">
+        <img src="images/instagram.jpg" alt="Instagram">
+      </a>
+    </div>
   </footer>
 </body>
 </html>
