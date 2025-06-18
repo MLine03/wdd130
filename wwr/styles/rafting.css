@@ -1,16 +1,42 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap');
 
+:root {
+  --primary-color: #0077cc;
+  --accent-color: #0b5ed7;
+  --hover-color: #084298;
+  --bg-light: #f0f8ff;
+  --bg-newsletter: #e3f2fd;
+  --text-color: #333;
+  --dark-bg: #222;
+  --highlight-bg: white;
+}
+
 body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
   background-color: #fafafa;
-  color: #333;
+  color: var(--text-color);
+}
+
+/* Accessibility: Skip Link */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
 }
 
 /* ----- Header & Navigation ----- */
 header {
-  background-color: #0077cc;
+  background-color: var(--primary-color);
   color: white;
   display: flex;
   align-items: center;
@@ -28,10 +54,13 @@ nav a {
   text-decoration: none;
   font-weight: bold;
   margin-left: 1.5rem;
+  transition: color 0.3s ease;
 }
 
-nav a:hover {
+nav a:hover,
+nav a:focus {
   text-decoration: underline;
+  outline: none;
 }
 
 /* ----- Hero Section ----- */
@@ -41,7 +70,7 @@ nav a:hover {
   gap: 2rem;
   align-items: center;
   padding: 2rem;
-  background-color: #f0f8ff;
+  background-color: var(--bg-light);
 }
 
 .hero-img {
@@ -62,9 +91,21 @@ nav a:hover {
   line-height: 1.6;
 }
 
+/* Responsive Hero */
+@media (max-width: 768px) {
+  .hero {
+    grid-template-columns: 1fr;
+    text-align: center;
+  }
+
+  .hero-text h1 {
+    font-size: 2rem;
+  }
+}
+
 /* ----- Newsletter Section ----- */
 .newsletter {
-  background-color: #e3f2fd;
+  background-color: var(--bg-newsletter);
   padding: 2rem;
   text-align: center;
 }
@@ -77,7 +118,8 @@ nav a:hover {
   margin: 0 auto;
 }
 
-.newsletter input, .newsletter button {
+.newsletter input,
+.newsletter button {
   padding: 0.75rem;
   border-radius: 0.5rem;
   border: 1px solid #999;
@@ -85,15 +127,17 @@ nav a:hover {
 }
 
 .newsletter button {
-  background-color: #0b5ed7;
+  background-color: var(--accent-color);
   color: white;
   border: none;
   cursor: pointer;
   transition: background 0.3s ease;
 }
 
-.newsletter button:hover {
-  background-color: #084298;
+.newsletter button:hover,
+.newsletter button:focus {
+  background-color: var(--hover-color);
+  outline: none;
 }
 
 /* ----- Call to Action Section ----- */
@@ -104,7 +148,7 @@ nav a:hover {
 
 .call-to-action h2 {
   font-family: 'Roboto', sans-serif;
-  color: #0077cc;
+  color: var(--primary-color);
   margin-bottom: 1rem;
 }
 
@@ -117,7 +161,7 @@ nav a:hover {
 }
 
 .highlight {
-  background-color: white;
+  background-color: var(--highlight-bg);
   padding: 1rem;
   text-align: center;
   border-radius: 0.5rem;
@@ -153,7 +197,7 @@ nav a:hover {
   border-radius: 0.5rem;
 }
 
-/* ----- Employee Section ----- */
+/* ----- Adventures Gallery Section ----- */
 .adventures-gallery {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -224,13 +268,15 @@ iframe {
   transition: background 0.3s ease;
 }
 
-.contact-form button:hover {
+.contact-form button:hover,
+.contact-form button:focus {
   background-color: #0a9396;
+  outline: none;
 }
 
 /* ----- Footer ----- */
 footer {
-  background-color: #222;
+  background-color: var(--dark-bg);
   color: #fff;
   text-align: center;
   padding: 1.5rem;
