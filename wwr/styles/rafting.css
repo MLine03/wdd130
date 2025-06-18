@@ -4,45 +4,161 @@ body {
   font-family: 'Poppins', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #fafafa;
+  color: #333;
 }
 
+/* ----- Header & Navigation ----- */
 header {
   background-color: #0077cc;
-  padding: 1rem;
   color: white;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  padding: 1rem 2rem;
+  justify-content: space-between;
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  gap: 1rem;
-  margin: 0;
-  padding: 0;
+header img {
+  max-width: 150px;
+  height: auto;
 }
 
 nav a {
   color: white;
   text-decoration: none;
   font-weight: bold;
+  margin-left: 1.5rem;
 }
 
-main {
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* ----- Hero Section ----- */
+.hero {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+  align-items: center;
+  padding: 2rem;
+  background-color: #f0f8ff;
+}
+
+.hero-img {
+  width: 100%;
+  height: auto;
+  border-radius: 1rem;
+}
+
+.hero-text h1 {
+  font-family: 'Roboto', sans-serif;
+  font-size: 2.5rem;
+  color: #0b3d91;
+  margin-bottom: 1rem;
+}
+
+.hero-text p {
+  font-size: 1.2rem;
+  line-height: 1.6;
+}
+
+/* ----- Newsletter Section ----- */
+.newsletter {
+  background-color: #e3f2fd;
+  padding: 2rem;
+  text-align: center;
+}
+
+.newsletter form {
+  display: grid;
+  grid-template-columns: 1fr 1fr auto;
+  gap: 1rem;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.newsletter input, .newsletter button {
+  padding: 0.75rem;
+  border-radius: 0.5rem;
+  border: 1px solid #999;
+  font-size: 1rem;
+}
+
+.newsletter button {
+  background-color: #0b5ed7;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.newsletter button:hover {
+  background-color: #084298;
+}
+
+/* ----- Call to Action Section ----- */
+.call-to-action {
+  padding: 2rem;
+  text-align: center;
+}
+
+.call-to-action h2 {
+  font-family: 'Roboto', sans-serif;
+  color: #0077cc;
+  margin-bottom: 1rem;
+}
+
+/* ----- Highlights Section ----- */
+.highlights {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
   padding: 2rem;
 }
 
-section h2, section h3 {
-  font-family: 'Roboto', sans-serif;
-  color: #0077cc;
+.highlight {
+  background-color: white;
+  padding: 1rem;
+  text-align: center;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
 }
 
+.highlight img {
+  width: 100%;
+  border-radius: 0.5rem;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* ----- Trips Page Styles ----- */
+.trips {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.trip-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+.trip-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 0.5rem;
+}
+
+/* ----- Employee Section ----- */
 .adventures-gallery {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   gap: 1.5rem;
-  margin: 2rem 0;
+  padding: 2rem;
 }
 
 figure {
@@ -56,40 +172,23 @@ figure img {
   border-radius: 8px;
 }
 
+/* ----- Iframe (Maps) ----- */
 iframe {
   border: 0;
   width: 100%;
   height: 350px;
 }
 
-footer {
-  background-color: #222;
-  color: #fff;
-  text-align: center;
-  padding: 1rem;
-}
-
-footer .social-icons {
-  margin-top: 0.5rem;
-}
-
-footer .social-icons a img {
-  width: 32px;
-  height: 32px;
-  margin: 0 0.25rem;
-}
-
-/* Contact Form Styles */
-
+/* ----- Contact Form ----- */
 .contact-form {
   max-width: 800px;
-  margin: 0 auto;
+  margin: 2rem auto;
   padding: 1rem;
 }
 
 .contact-form label {
   font-weight: bold;
-  margin-top: 0.75rem;
+  margin-top: 1rem;
   display: block;
 }
 
@@ -97,16 +196,15 @@ footer .social-icons a img {
 .contact-form input[type="email"],
 .contact-form textarea {
   width: 100%;
-  padding: 0.5rem;
+  padding: 0.6rem;
   border: 1px solid #ccc;
   border-radius: 5px;
-  font-family: inherit;
   font-size: 1rem;
-  box-sizing: border-box;
 }
 
 .contact-form textarea {
   resize: vertical;
+  min-height: 120px;
 }
 
 .contact-form input[type="radio"],
@@ -115,17 +213,35 @@ footer .social-icons a img {
 }
 
 .contact-form button {
-  margin-top: 1rem;
   background-color: #005f73;
   color: white;
-  padding: 0.75rem 1.5rem;
+  padding: 0.8rem 1.6rem;
+  margin-top: 1.5rem;
   border: none;
   border-radius: 5px;
   font-size: 1.1rem;
   cursor: pointer;
-  transition: background-color 0.3s ease;
+  transition: background 0.3s ease;
 }
 
 .contact-form button:hover {
   background-color: #0a9396;
+}
+
+/* ----- Footer ----- */
+footer {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+  padding: 1.5rem;
+}
+
+footer .socials {
+  margin: 1rem 0;
+}
+
+footer .socials a img {
+  width: 32px;
+  height: 32px;
+  margin: 0 0.5rem;
 }
